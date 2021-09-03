@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1624351377391" analysisTimestamp="1624351383573" release="">
+  <Project projectName="">
+    <Jar>C:\Users\65983\Desktop\soar_lab\build-projects\project-repos\commons-lang-3</Jar>
+  </Project>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="indexOf" signature="([DDI)I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2292" end="2303" startBytecode="0" endBytecode="148" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2299" end="2299" startBytecode="31" endBytecode="31" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="indexOf" signature="([FFI)I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2499" end="2510" startBytecode="0" endBytecode="144" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2506" end="2506" startBytecode="28" endBytecode="28" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="lastIndexOf" signature="([DDI)I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2386" end="2399" startBytecode="0" endBytecode="165" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2395" end="2395" startBytecode="40" endBytecode="40" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="FE_FLOATING_POINT_EQUALITY" priority="3" rank="20" abbrev="FE" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="lastIndexOf" signature="([FFI)I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2542" end="2555" startBytecode="0" endBytecode="161" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2551" end="2551" startBytecode="37" endBytecode="37" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([B)[B" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="400" end="403" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="401" end="401" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([C)[C" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="384" end="387" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="385" end="385" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([D)[D" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="416" end="419" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="417" end="417" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([F)[F" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="432" end="435" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="433" end="433" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([I)[I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="352" end="355" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="353" end="353" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([J)[J" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="336" end="339" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="337" end="337" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([Ljava/lang/Object;)[Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="320" end="323" startBytecode="0" endBytecode="81" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="321" end="321" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([S)[S" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="368" end="371" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="369" end="369" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="clone" signature="([Z)[Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="448" end="451" startBytecode="0" endBytecode="63" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="449" end="449" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([BII)[B" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1045" end="1061" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1046" end="1046" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([CII)[C" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1006" end="1022" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1007" end="1007" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([DII)[D" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1084" end="1100" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1085" end="1085" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([FII)[F" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1123" end="1139" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1124" end="1124" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([III)[I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="928" end="944" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="929" end="929" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([JII)[J" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="889" end="905" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="890" end="890" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([Ljava/lang/Object;II)[Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="847" end="866" startBytecode="0" endBytecode="282" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="848" end="848" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([SII)[S" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="967" end="983" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="968" end="968" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="subarray" signature="([ZII)[Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1162" end="1178" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="1163" end="1163" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([B)[Ljava/lang/Byte;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3007" end="3016" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3008" end="3008" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([C)[Ljava/lang/Character;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2735" end="2744" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2736" end="2736" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([D)[Ljava/lang/Double;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3075" end="3084" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3076" end="3076" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([F)[Ljava/lang/Float;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3143" end="3152" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3144" end="3144" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([I)[Ljava/lang/Integer;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2871" end="2880" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2872" end="2872" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([J)[Ljava/lang/Long;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2803" end="2812" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2804" end="2804" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([S)[Ljava/lang/Short;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2939" end="2948" startBytecode="0" endBytecode="139" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2940" end="2940" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toObject" signature="([Z)[Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3211" end="3220" startBytecode="0" endBytecode="148" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3212" end="3212" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Boolean;)[Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3167" end="3176" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3168" end="3168" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Boolean;Z)[Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3189" end="3199" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3190" end="3190" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Byte;)[B" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2963" end="2972" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2964" end="2964" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Byte;B)[B" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2985" end="2995" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2986" end="2986" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Character;)[C" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2691" end="2700" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2692" end="2692" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Character;C)[C" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2713" end="2723" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2714" end="2714" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Double;)[D" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3031" end="3040" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3032" end="3032" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Double;D)[D" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3053" end="3063" startBytecode="0" endBytecode="179" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3054" end="3054" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Float;)[F" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3099" end="3108" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3100" end="3100" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Float;F)[F" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3121" end="3131" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="3122" end="3122" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Integer;)[I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2827" end="2836" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2828" end="2828" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Integer;I)[I" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2849" end="2859" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2850" end="2850" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Long;)[J" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2759" end="2768" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2760" end="2760" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Long;J)[J" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2781" end="2791" startBytecode="0" endBytecode="179" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2782" end="2782" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Short;)[S" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2895" end="2904" startBytecode="0" endBytecode="138" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2896" end="2896" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ArrayUtils">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ArrayUtils" name="toPrimitive" signature="([Ljava/lang/Short;S)[S" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2917" end="2927" startBytecode="0" endBytecode="175" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ArrayUtils" start="2918" end="2918" startBytecode="5" endBytecode="5" sourcefile="ArrayUtils.java" sourcepath="org/apache/commons/lang3/ArrayUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="545" end="623" startBytecode="0" endBytecode="227" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <String value="true" role="STRING_CONSTANT"/>
+    <LocalVariable name="str" register="0" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="545" end="545" startBytecode="3" endBytecode="3" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="3" rank="19" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBoolean" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="713" end="725" startBytecode="0" endBytecode="28" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <LocalVariable name="falseString" register="2" pc="8" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <LocalVariable name="str" register="0" pc="8" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="715" end="715" startBytecode="9" endBytecode="9" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.SAW_CALL_TO_EQUALS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="3" rank="19" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBoolean" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="713" end="725" startBytecode="0" endBytecode="28" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <LocalVariable name="trueString" register="1" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <LocalVariable name="str" register="0" pc="1" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="713" end="713" startBytecode="2" endBytecode="2" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.SAW_CALL_TO_EQUALS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="negate" signature="(Ljava/lang/Boolean;)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="64" end="67" startBytecode="0" endBytecode="72" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="65" end="65" startBytecode="5" endBytecode="5" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBooleanObject" signature="(IIII)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="325" end="335" startBytecode="0" endBytecode="130" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="332" end="332" startBytecode="24" endBytecode="24" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/Integer;)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="239" end="242" startBytecode="0" endBytecode="72" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="240" end="240" startBytecode="5" endBytecode="5" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="357" end="375" startBytecode="0" endBytecode="193" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="365" end="365" startBytecode="25" endBytecode="25" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="372" end="372" startBytecode="59" endBytecode="59" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="545" end="623" startBytecode="0" endBytecode="800" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="549" end="549" startBytecode="15" endBytecode="15" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="623" end="623" startBytecode="464" endBytecode="464" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="NP_BOOLEAN_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBooleanObject" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="646" end="664" startBytecode="0" endBytecode="193" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="654" end="654" startBytecode="25" endBytecode="25" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="661" end="661" startBytecode="59" endBytecode="59" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN" priority="2" rank="16" abbrev="RC" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.BooleanUtils">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.BooleanUtils" name="toBoolean" signature="(Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="695" end="695" startBytecode="0" endBytecode="7" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Boolean;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Type>
+    <Field classname="java.lang.Boolean" name="TRUE" signature="Ljava/lang/Boolean;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="java.lang.Boolean"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.lang3.BooleanUtils" start="695" end="695" startBytecode="7" endBytecode="7" sourcefile="BooleanUtils.java" sourcepath="org/apache/commons/lang3/BooleanUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.CharRange">
+      <SourceLine classname="org.apache.commons.lang3.CharRange" sourcefile="CharRange.java" sourcepath="org/apache/commons/lang3/CharRange.java"/>
+    </Class>
+    <Field classname="org.apache.commons.lang3.CharRange" name="iToString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.CharRange" sourcefile="CharRange.java" sourcepath="org/apache/commons/lang3/CharRange.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ClassUtils">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ClassUtils" name="primitivesToWrappers" signature="([Ljava/lang/Class;)[Ljava/lang/Class;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="720" end="732" startBytecode="0" endBytecode="165" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="721" end="721" startBytecode="5" endBytecode="5" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ClassUtils">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ClassUtils" name="toClass" signature="([Ljava/lang/Object;)[Ljava/lang/Class;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="982" end="991" startBytecode="0" endBytecode="167" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="983" end="983" startBytecode="5" endBytecode="5" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.ClassUtils">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ClassUtils" name="wrappersToPrimitives" signature="([Ljava/lang/Class;)[Ljava/lang/Class;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="770" end="782" startBytecode="0" endBytecode="165" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="771" end="771" startBytecode="5" endBytecode="5" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="org.apache.commons.lang3.ClassUtils">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.ClassUtils" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="53" end="127" startBytecode="0" endBytecode="517" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Method>
+    <Field classname="org.apache.commons.lang3.ClassUtils" name="primitiveWrapperMap" signature="Ljava/util/Map;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.ClassUtils" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.lang3.ClassUtils" start="87" end="87" startBytecode="208" endBytecode="208" sourcefile="ClassUtils.java" sourcepath="org/apache/commons/lang3/ClassUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.Range">
+      <SourceLine classname="org.apache.commons.lang3.Range" sourcefile="Range.java" sourcepath="org/apache/commons/lang3/Range.java"/>
+    </Class>
+    <Field classname="org.apache.commons.lang3.Range" name="comparator" signature="Ljava/util/Comparator;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.Range" sourcefile="Range.java" sourcepath="org/apache/commons/lang3/Range.java"/>
+    </Field>
+    <Type descriptor="Ljava/util/Comparator;" role="TYPE_FOUND" typeParameters="&lt;T&gt;">
+      <SourceLine classname="java.util.Comparator"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.Range">
+      <SourceLine classname="org.apache.commons.lang3.Range" sourcefile="Range.java" sourcepath="org/apache/commons/lang3/Range.java"/>
+    </Class>
+    <Field classname="org.apache.commons.lang3.Range" name="hashCode" signature="I" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.Range" sourcefile="Range.java" sourcepath="org/apache/commons/lang3/Range.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.Range">
+      <SourceLine classname="org.apache.commons.lang3.Range" sourcefile="Range.java" sourcepath="org/apache/commons/lang3/Range.java"/>
+    </Class>
+    <Field classname="org.apache.commons.lang3.Range" name="toString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.Range" sourcefile="Range.java" sourcepath="org/apache/commons/lang3/Range.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="lowerCase" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="5496" end="5499" startBytecode="0" endBytecode="60" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="5499" end="5499" startBytecode="7" endBytecode="7" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="upperCase" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="5447" end="5450" startBytecode="0" endBytecode="60" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="5450" end="5450" startBytecode="7" endBytecode="7" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="toString" signature="([BLjava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="7101" end="7101" startBytecode="0" endBytecode="76" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="7101" end="7101" startBytecode="9" endBytecode="9" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="splitByCharacterType" signature="(Ljava/lang/String;Z)[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="3084" end="3112" startBytecode="0" endBytecode="440" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="3085" end="3085" startBytecode="5" endBytecode="5" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="splitByWholeSeparatorWorker" signature="(Ljava/lang/String;Ljava/lang/String;IZ)[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2667" end="2728" startBytecode="0" endBytecode="506" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2668" end="2668" startBytecode="5" endBytecode="5" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="splitWorker" signature="(Ljava/lang/String;CZ)[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2811" end="2839" startBytecode="0" endBytecode="387" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2812" end="2812" startBytecode="5" endBytecode="5" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="splitWorker" signature="(Ljava/lang/String;Ljava/lang/String;IZ)[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2938" end="3015" startBytecode="0" endBytecode="783" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2939" end="2939" startBytecode="5" endBytecode="5" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="PZLA_PREFER_ZERO_LENGTH_ARRAYS" priority="3" rank="20" abbrev="PZLA" category="STYLE">
+    <Class classname="org.apache.commons.lang3.StringUtils">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.StringUtils" name="substringsBetween" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2379" end="2406" startBytecode="0" endBytecode="403" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2380" end="2380" startBytecode="19" endBytecode="19" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.StringUtils" start="2404" end="2404" startBytecode="144" endBytecode="144" sourcefile="StringUtils.java" sourcepath="org/apache/commons/lang3/StringUtils.java"/>
+  </BugInstance>
+  <BugInstance type="HE_HASHCODE_USE_OBJECT_EQUALS" priority="3" rank="19" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.builder.HashCodeBuilder">
+      <SourceLine classname="org.apache.commons.lang3.builder.HashCodeBuilder" sourcefile="HashCodeBuilder.java" sourcepath="org/apache/commons/lang3/builder/HashCodeBuilder.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.builder.HashCodeBuilder" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.builder.HashCodeBuilder" start="959" end="959" startBytecode="0" endBytecode="46" sourcefile="HashCodeBuilder.java" sourcepath="org/apache/commons/lang3/builder/HashCodeBuilder.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.apache.commons.lang3.concurrent.ConcurrentUtils">
+      <SourceLine classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" sourcefile="ConcurrentUtils.java" sourcepath="org/apache/commons/lang3/concurrent/ConcurrentUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" name="throwCause" signature="(Ljava/util/concurrent/ExecutionException;)V" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" start="159" end="166" startBytecode="0" endBytecode="16" sourcefile="ConcurrentUtils.java" sourcepath="org/apache/commons/lang3/concurrent/ConcurrentUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Throwable;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Throwable"/>
+    </Type>
+    <Type descriptor="Ljava/lang/Error;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.Error"/>
+    </Type>
+    <SourceLine classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" start="164" end="164" startBytecode="32" endBytecode="32" sourcefile="ConcurrentUtils.java" sourcepath="org/apache/commons/lang3/concurrent/ConcurrentUtils.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.apache.commons.lang3.concurrent.ConcurrentUtils">
+      <SourceLine classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" sourcefile="ConcurrentUtils.java" sourcepath="org/apache/commons/lang3/concurrent/ConcurrentUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" name="throwCause" signature="(Ljava/util/concurrent/ExecutionException;)V" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" start="159" end="166" startBytecode="0" endBytecode="16" sourcefile="ConcurrentUtils.java" sourcepath="org/apache/commons/lang3/concurrent/ConcurrentUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Throwable;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Throwable"/>
+    </Type>
+    <Type descriptor="Ljava/lang/RuntimeException;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.RuntimeException"/>
+    </Type>
+    <SourceLine classname="org.apache.commons.lang3.concurrent.ConcurrentUtils" start="160" end="160" startBytecode="14" endBytecode="14" sourcefile="ConcurrentUtils.java" sourcepath="org/apache/commons/lang3/concurrent/ConcurrentUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="3" rank="19" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.math.Fraction">
+      <SourceLine classname="org.apache.commons.lang3.math.Fraction" sourcefile="Fraction.java" sourcepath="org/apache/commons/lang3/math/Fraction.java"/>
+    </Class>
+    <Field classname="org.apache.commons.lang3.math.Fraction" name="toProperString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.math.Fraction" sourcefile="Fraction.java" sourcepath="org/apache/commons/lang3/math/Fraction.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="1" rank="6" abbrev="RpC" category="CORRECTNESS">
+    <Class classname="org.apache.commons.lang3.math.NumberUtils">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createBigInteger" signature="(Ljava/lang/String;)Ljava/math/BigInteger;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="706" end="728" startBytecode="0" endBytecode="283" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="716" end="716" startBytecode="26" endBytecode="32" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="716" end="716" startBytecode="36" endBytecode="42" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.math.NumberUtils">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createNumber" signature="(Ljava/lang/String;)Ljava/lang/Number;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="447" end="601" startBytecode="0" endBytecode="1537" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="535" end="542" startBytecode="602" endBytecode="604" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.math.NumberUtils">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.math.NumberUtils" name="createNumber" signature="(Ljava/lang/String;)Ljava/lang/Number;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="447" end="601" startBytecode="0" endBytecode="1537" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.math.NumberUtils" start="510" end="551" startBytecode="424" endBytecode="650" sourcefile="NumberUtils.java" sourcepath="org/apache/commons/lang3/math/NumberUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.lang3.reflect.FieldUtils">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.reflect.FieldUtils" name="getDeclaredField" signature="(Ljava/lang/Class;Ljava/lang/String;Z)Ljava/lang/reflect/Field;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="156" end="176" startBytecode="0" endBytecode="209" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="167" end="167" startBytecode="47" endBytecode="47" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.lang3.reflect.FieldUtils">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.reflect.FieldUtils" name="getField" signature="(Ljava/lang/Class;Ljava/lang/String;Z)Ljava/lang/reflect/Field;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="75" end="128" startBytecode="0" endBytecode="453" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="102" end="102" startBytecode="59" endBytecode="59" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.lang3.reflect.FieldUtils">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.reflect.FieldUtils" name="readField" signature="(Ljava/lang/reflect/Field;Ljava/lang/Object;Z)Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="302" end="310" startBytecode="0" endBytecode="124" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="306" end="306" startBytecode="27" endBytecode="27" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.lang3.reflect.FieldUtils">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.reflect.FieldUtils" name="writeField" signature="(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Object;Z)V" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="511" end="520" startBytecode="0" endBytecode="139" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.reflect.FieldUtils" start="515" end="515" startBytecode="27" endBytecode="27" sourcefile="FieldUtils.java" sourcepath="org/apache/commons/lang3/reflect/FieldUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.text.ExtendedMessageFormat">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="parseFormatDescription" signature="(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="373" end="393" startBytecode="0" endBytecode="283" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="378" end="389" startBytecode="39" endBytecode="103" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+  </BugInstance>
+  <BugInstance type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR" priority="2" rank="10" abbrev="UR" category="CORRECTNESS">
+    <Class classname="org.apache.commons.lang3.text.ExtendedMessageFormat">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="applyPattern" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="146" end="209" startBytecode="0" endBytecode="865" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+    </Method>
+    <Field classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="registry" signature="Ljava/util/Map;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+    </Field>
+    <Method classname="java.text.MessageFormat" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_SUPERCLASS_CONSTRUCTOR">
+      <SourceLine classname="java.text.MessageFormat"/>
+    </Method>
+    <SourceLine classname="java.text.MessageFormat" startBytecode="52" endBytecode="52" role="SOURCE_LINE_CALLED_FROM_SUPERCLASS_AT"/>
+    <Method classname="org.apache.commons.lang3.text.ExtendedMessageFormat" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/util/Locale;Ljava/util/Map;)V" isStatic="false" role="METHOD_CONSTRUCTOR">
+      <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="125" end="129" startBytecode="0" endBytecode="127" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="127" end="127" startBytecode="13" endBytecode="13" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java" role="SOURCE_LINE_FIELD_SET_TOO_LATE_AT"/>
+    <SourceLine classname="org.apache.commons.lang3.text.ExtendedMessageFormat" start="146" end="146" startBytecode="1" endBytecode="1" sourcefile="ExtendedMessageFormat.java" sourcepath="org/apache/commons/lang3/text/ExtendedMessageFormat.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="1" rank="14" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.text.StrTokenizer">
+      <SourceLine classname="org.apache.commons.lang3.text.StrTokenizer" sourcefile="StrTokenizer.java" sourcepath="org/apache/commons/lang3/text/StrTokenizer.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.StrTokenizer" name="clone" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.text.StrTokenizer" start="1077" end="1079" startBytecode="0" endBytecode="75" sourcefile="StrTokenizer.java" sourcepath="org/apache/commons/lang3/text/StrTokenizer.java"/>
+    </Method>
+    <Class classname="org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer" role="CLASS_SUBCLASS">
+      <SourceLine classname="org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer" sourcefile="StrBuilder.java" sourcepath="org/apache/commons/lang3/text/StrBuilder.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="org.apache.commons.lang3.text.WordUtils">
+      <SourceLine classname="org.apache.commons.lang3.text.WordUtils" sourcefile="WordUtils.java" sourcepath="org/apache/commons/lang3/text/WordUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.text.WordUtils" name="capitalizeFully" signature="(Ljava/lang/String;[C)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.text.WordUtils" start="270" end="275" startBytecode="0" endBytecode="112" sourcefile="WordUtils.java" sourcepath="org/apache/commons/lang3/text/WordUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.text.WordUtils" start="274" end="274" startBytecode="25" endBytecode="25" sourcefile="WordUtils.java" sourcepath="org/apache/commons/lang3/text/WordUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.DateUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="getFragment" signature="(Ljava/util/Calendar;II)J" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1683" end="1721" startBytecode="0" endBytecode="412" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1707" end="1710" startBytecode="172" endBytecode="174" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1710" end="1713" startBytecode="190" endBytecode="192" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1713" end="1716" startBytecode="208" endBytecode="210" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.DateUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="getFragment" signature="(Ljava/util/Calendar;II)J" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1683" end="1721" startBytecode="0" endBytecode="412" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1690" end="1695" startBytecode="23" endBytecode="85" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.DateUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="iterator" signature="(Ljava/util/Calendar;I)Ljava/util/Iterator;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1153" end="1221" startBytecode="0" endBytecode="571" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1182" end="1196" startBytecode="118" endBytecode="196" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.DateUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DateUtils" name="modify" signature="(Ljava/util/Calendar;II)V" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="957" end="1090" startBytecode="0" endBytecode="1113" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DateUtils" start="1047" end="1073" startBytecode="368" endBytecode="486" sourcefile="DateUtils.java" sourcepath="org/apache/commons/lang3/time/DateUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="H" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="199" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="438" end="438" startBytecode="202" endBytecode="202" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="M" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="113" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="430" end="430" startBytecode="116" endBytecode="116" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="S" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="334" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="450" end="450" startBytecode="337" endBytecode="337" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="d" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="156" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="434" end="434" startBytecode="159" endBytecode="159" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="m" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="244" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="442" end="442" startBytecode="247" endBytecode="247" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="s" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="289" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="446" end="446" startBytecode="292" endBytecode="292" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="format" signature="([Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;IIIIIIIZ)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="416" end="466" startBytecode="0" endBytecode="190" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Field classname="org.apache.commons.lang3.time.DurationFormatUtils" name="y" signature="Ljava/lang/Object;" isStatic="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Field>
+    <LocalVariable name="value" register="14" pc="70" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="426" end="426" startBytecode="73" endBytecode="73" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="lexx" signature="(Ljava/lang/String;)[Lorg/apache/commons/lang3/time/DurationFormatUtils$Token;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="484" end="538" startBytecode="0" endBytecode="132" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <LocalVariable name="value" register="9" pc="291" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils$Token" name="getValue" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils$Token" start="611" end="611" startBytecode="0" endBytecode="46" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="528" end="528" startBytecode="293" endBytecode="293" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="RpC_REPEATED_CONDITIONAL_TEST" priority="3" rank="11" abbrev="RpC" category="CORRECTNESS">
+    <Class classname="org.apache.commons.lang3.time.DurationFormatUtils">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.DurationFormatUtils" name="formatPeriod" signature="(JJLjava/lang/String;ZLjava/util/TimeZone;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="278" end="396" startBytecode="0" endBytecode="1071" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="326" end="326" startBytecode="284" endBytecode="285" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+    <SourceLine classname="org.apache.commons.lang3.time.DurationFormatUtils" start="327" end="327" startBytecode="289" endBytecode="290" sourcefile="DurationFormatUtils.java" sourcepath="org/apache/commons/lang3/time/DurationFormatUtils.java"/>
+  </BugInstance>
+  <BugInstance type="GC_UNRELATED_TYPES" priority="1" rank="1" abbrev="GC" category="CORRECTNESS">
+    <Class classname="org.apache.commons.lang3.time.FastDateParser">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.FastDateParser" name="getLocaleSpecificStrategy" signature="(ILjava/util/Calendar;)Lorg/apache/commons/lang3/time/FastDateParser$Strategy;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" start="501" end="512" startBytecode="0" endBytecode="40" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer"/>
+    </Type>
+    <Type descriptor="Ljava/util/Locale;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.Locale"/>
+    </Type>
+    <Method classname="java.util.concurrent.ConcurrentMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.concurrent.ConcurrentMap"/>
+    </Method>
+    <LocalVariable name="cache" register="3" pc="7" role="LOCAL_VARIABLE_INVOKED_ON"/>
+    <Method classname="java.lang.Integer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Integer"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" start="502" end="502" startBytecode="10" endBytecode="10" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.FastDateParser">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.FastDateParser" name="escapeRegex" signature="(Ljava/lang/StringBuilder;Ljava/lang/String;Z)Ljava/lang/StringBuilder;" isStatic="true">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" start="300" end="334" startBytecode="0" endBytecode="300" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" start="303" end="327" startBytecode="26" endBytecode="124" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.FastDateParser">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.FastDateParser" name="getStrategy" signature="(Ljava/lang/String;Ljava/util/Calendar;)Lorg/apache/commons/lang3/time/FastDateParser$Strategy;" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" start="428" end="472" startBytecode="0" endBytecode="648" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.FastDateParser" start="428" end="469" startBytecode="5" endBytecode="494" sourcefile="FastDateParser.java" sourcepath="org/apache/commons/lang3/time/FastDateParser.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_CONDITION" priority="3" rank="19" abbrev="UC" category="STYLE">
+    <Class classname="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField" sourcefile="FastDatePrinter.java" sourcepath="org/apache/commons/lang3/time/FastDatePrinter.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField" name="appendTo" signature="(Ljava/lang/StringBuffer;I)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField" start="841" end="860" startBytecode="0" endBytecode="279" sourcefile="FastDatePrinter.java" sourcepath="org/apache/commons/lang3/time/FastDatePrinter.java"/>
+    </Method>
+    <String value="value &gt; -1"/>
+    <SourceLine classname="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField" start="852" end="852" startBytecode="72" endBytecode="72" sourcefile="FastDatePrinter.java" sourcepath="org/apache/commons/lang3/time/FastDatePrinter.java"/>
+  </BugInstance>
+  <BugInstance type="BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS" priority="2" rank="16" abbrev="BC" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.FormatCache$MultipartKey">
+      <SourceLine classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" sourcefile="FormatCache.java" sourcepath="org/apache/commons/lang3/time/FormatCache.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" start="191" end="191" startBytecode="0" endBytecode="66" sourcefile="FormatCache.java" sourcepath="org/apache/commons/lang3/time/FormatCache.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" start="191" end="191" startBytecode="5" endBytecode="5" sourcefile="FormatCache.java" sourcepath="org/apache/commons/lang3/time/FormatCache.java"/>
+  </BugInstance>
+  <BugInstance type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT" priority="2" rank="11" abbrev="NP" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.lang3.time.FormatCache$MultipartKey">
+      <SourceLine classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" sourcefile="FormatCache.java" sourcepath="org/apache/commons/lang3/time/FormatCache.java"/>
+    </Class>
+    <Method classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="org.apache.commons.lang3.time.FormatCache$MultipartKey" start="191" end="191" startBytecode="0" endBytecode="66" sourcefile="FormatCache.java" sourcepath="org/apache/commons/lang3/time/FormatCache.java"/>
+    </Method>
+    <LocalVariable name="obj" register="1" pc="0" role="LOCAL_VARIABLE_PARAMETER_NAMED"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 22 Jun 2021 16:42:57 +0800" total_classes="170" referenced_classes="411" total_bugs="106" total_size="15069" num_packages="12" java_version="1.8.0_202" vm_version="25.202-b08" cpu_seconds="18.00" clock_seconds="22.10" peak_mbytes="1274.81" alloc_mbytes="1772.50" gc_seconds="0.76" priority_3="73" priority_2="28" priority_1="5">
+    <PackageStats package="org.apache.commons.lang3" total_bugs="72" total_types="33" total_size="5891" priority_3="62" priority_2="8" priority_1="2">
+      <ClassStats class="org.apache.commons.lang3.AnnotationUtils" sourceFile="AnnotationUtils.java" interface="false" size="124" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.AnnotationUtils$1" sourceFile="AnnotationUtils.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.ArrayUtils" sourceFile="ArrayUtils.java" interface="false" size="1488" bugs="46" priority_3="46"/>
+      <ClassStats class="org.apache.commons.lang3.BitField" sourceFile="BitField.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.BooleanUtils" sourceFile="BooleanUtils.java" interface="false" size="231" bugs="10" priority_3="2" priority_2="7" priority_1="1"/>
+      <ClassStats class="org.apache.commons.lang3.CharEncoding" sourceFile="CharEncoding.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.CharRange" sourceFile="CharRange.java" interface="false" size="68" bugs="1" priority_3="1"/>
+      <ClassStats class="org.apache.commons.lang3.CharRange$1" sourceFile="CharRange.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.CharRange$CharacterIterator" sourceFile="CharRange.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.CharSequenceUtils" sourceFile="CharSequenceUtils.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.CharSet" sourceFile="CharSet.java" interface="false" size="78" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.CharSetUtils" sourceFile="CharSetUtils.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.CharUtils" sourceFile="CharUtils.java" interface="false" size="86" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.ClassUtils" sourceFile="ClassUtils.java" interface="false" size="330" bugs="4" priority_3="3" priority_2="1"/>
+      <ClassStats class="org.apache.commons.lang3.Conversion" sourceFile="Conversion.java" interface="false" size="567" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.EnumUtils" sourceFile="EnumUtils.java" interface="false" size="85" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.JavaVersion" sourceFile="JavaVersion.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.LocaleUtils" sourceFile="LocaleUtils.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.LocaleUtils$SyncAvoid" sourceFile="LocaleUtils.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.ObjectUtils" sourceFile="ObjectUtils.java" interface="false" size="157" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.ObjectUtils$Null" sourceFile="ObjectUtils.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.RandomStringUtils" sourceFile="RandomStringUtils.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.Range" sourceFile="Range.java" interface="false" size="118" bugs="3" priority_3="3"/>
+      <ClassStats class="org.apache.commons.lang3.Range$ComparableComparator" sourceFile="Range.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.SerializationException" sourceFile="SerializationException.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.SerializationUtils" sourceFile="SerializationUtils.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream" sourceFile="SerializationUtils.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.StringEscapeUtils" sourceFile="StringEscapeUtils.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.StringEscapeUtils$CsvEscaper" sourceFile="StringEscapeUtils.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper" sourceFile="StringEscapeUtils.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.StringUtils" sourceFile="StringUtils.java" interface="false" size="1520" bugs="8" priority_3="7" priority_1="1"/>
+      <ClassStats class="org.apache.commons.lang3.SystemUtils" sourceFile="SystemUtils.java" interface="false" size="195" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.Validate" sourceFile="Validate.java" interface="false" size="172" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.builder" total_bugs="1" total_types="14" total_size="1891" priority_3="1">
+      <ClassStats class="org.apache.commons.lang3.builder.Builder" sourceFile="Builder.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.CompareToBuilder" sourceFile="CompareToBuilder.java" interface="false" size="287" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.EqualsBuilder" sourceFile="EqualsBuilder.java" interface="false" size="299" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.HashCodeBuilder" sourceFile="HashCodeBuilder.java" interface="false" size="194" bugs="1" priority_3="1"/>
+      <ClassStats class="org.apache.commons.lang3.builder.IDKey" sourceFile="IDKey.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ReflectionToStringBuilder" sourceFile="ReflectionToStringBuilder.java" interface="false" size="113" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.StandardToStringStyle" sourceFile="StandardToStringStyle.java" interface="false" size="105" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringBuilder" sourceFile="ToStringBuilder.java" interface="false" size="203" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringStyle" sourceFile="ToStringStyle.java" interface="false" size="624" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle" sourceFile="ToStringStyle.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle" sourceFile="ToStringStyle.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle" sourceFile="ToStringStyle.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle" sourceFile="ToStringStyle.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle" sourceFile="ToStringStyle.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.concurrent" total_bugs="2" total_types="20" total_size="503" priority_3="2">
+      <ClassStats class="org.apache.commons.lang3.concurrent.AtomicInitializer" sourceFile="AtomicInitializer.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.AtomicSafeInitializer" sourceFile="AtomicSafeInitializer.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.BackgroundInitializer" sourceFile="BackgroundInitializer.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.BackgroundInitializer$InitializationTask" sourceFile="BackgroundInitializer.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.BasicThreadFactory" sourceFile="BasicThreadFactory.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.BasicThreadFactory$1" sourceFile="BasicThreadFactory.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.BasicThreadFactory$Builder" sourceFile="BasicThreadFactory.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.CallableBackgroundInitializer" sourceFile="CallableBackgroundInitializer.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.ConcurrentException" sourceFile="ConcurrentException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.ConcurrentInitializer" sourceFile="ConcurrentInitializer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.ConcurrentRuntimeException" sourceFile="ConcurrentRuntimeException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.ConcurrentUtils" sourceFile="ConcurrentUtils.java" interface="false" size="58" bugs="2" priority_3="2"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture" sourceFile="ConcurrentUtils.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.ConstantInitializer" sourceFile="ConstantInitializer.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.LazyInitializer" sourceFile="LazyInitializer.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.MultiBackgroundInitializer" sourceFile="MultiBackgroundInitializer.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1" sourceFile="MultiBackgroundInitializer.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults" sourceFile="MultiBackgroundInitializer.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.TimedSemaphore" sourceFile="TimedSemaphore.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.concurrent.TimedSemaphore$1" sourceFile="TimedSemaphore.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.event" total_bugs="0" total_types="4" total_size="110">
+      <ClassStats class="org.apache.commons.lang3.event.EventListenerSupport" sourceFile="EventListenerSupport.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.event.EventListenerSupport$ProxyInvocationHandler" sourceFile="EventListenerSupport.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.event.EventUtils" sourceFile="EventUtils.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.event.EventUtils$EventBindingInvocationHandler" sourceFile="EventUtils.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.exception" total_bugs="0" total_types="6" total_size="354">
+      <ClassStats class="org.apache.commons.lang3.exception.CloneFailedException" sourceFile="CloneFailedException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.exception.ContextedException" sourceFile="ContextedException.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.exception.ContextedRuntimeException" sourceFile="ContextedRuntimeException.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.exception.DefaultExceptionContext" sourceFile="DefaultExceptionContext.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.exception.ExceptionContext" sourceFile="ExceptionContext.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.exception.ExceptionUtils" sourceFile="ExceptionUtils.java" interface="false" size="172" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.math" total_bugs="4" total_types="3" total_size="829" priority_3="1" priority_2="2" priority_1="1">
+      <ClassStats class="org.apache.commons.lang3.math.Fraction" sourceFile="Fraction.java" interface="false" size="320" bugs="1" priority_3="1"/>
+      <ClassStats class="org.apache.commons.lang3.math.IEEE754rUtils" sourceFile="IEEE754rUtils.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.math.NumberUtils" sourceFile="NumberUtils.java" interface="false" size="438" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.mutable" total_bugs="0" total_types="9" total_size="499">
+      <ClassStats class="org.apache.commons.lang3.mutable.Mutable" sourceFile="Mutable.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableBoolean" sourceFile="MutableBoolean.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableByte" sourceFile="MutableByte.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableDouble" sourceFile="MutableDouble.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableFloat" sourceFile="MutableFloat.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableInt" sourceFile="MutableInt.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableLong" sourceFile="MutableLong.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableObject" sourceFile="MutableObject.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.mutable.MutableShort" sourceFile="MutableShort.java" interface="false" size="71" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.reflect" total_bugs="4" total_types="5" total_size="698" priority_3="4">
+      <ClassStats class="org.apache.commons.lang3.reflect.ConstructorUtils" sourceFile="ConstructorUtils.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.reflect.FieldUtils" sourceFile="FieldUtils.java" interface="false" size="160" bugs="4" priority_3="4"/>
+      <ClassStats class="org.apache.commons.lang3.reflect.MemberUtils" sourceFile="MemberUtils.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.reflect.MethodUtils" sourceFile="MethodUtils.java" interface="false" size="116" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.reflect.TypeUtils" sourceFile="TypeUtils.java" interface="false" size="312" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.text" total_bugs="4" total_types="19" total_size="2039" priority_3="1" priority_2="2" priority_1="1">
+      <ClassStats class="org.apache.commons.lang3.text.CompositeFormat" sourceFile="CompositeFormat.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.ExtendedMessageFormat" sourceFile="ExtendedMessageFormat.java" interface="false" size="214" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.lang3.text.FormatFactory" sourceFile="FormatFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.FormattableUtils" sourceFile="FormattableUtils.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrBuilder" sourceFile="StrBuilder.java" interface="false" size="848" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrBuilder$StrBuilderReader" sourceFile="StrBuilder.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer" sourceFile="StrBuilder.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrBuilder$StrBuilderWriter" sourceFile="StrBuilder.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrLookup" sourceFile="StrLookup.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrLookup$MapStrLookup" sourceFile="StrLookup.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrMatcher" sourceFile="StrMatcher.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrMatcher$CharMatcher" sourceFile="StrMatcher.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrMatcher$CharSetMatcher" sourceFile="StrMatcher.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrMatcher$NoMatcher" sourceFile="StrMatcher.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrMatcher$StringMatcher" sourceFile="StrMatcher.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrMatcher$TrimMatcher" sourceFile="StrMatcher.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrSubstitutor" sourceFile="StrSubstitutor.java" interface="false" size="255" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.StrTokenizer" sourceFile="StrTokenizer.java" interface="false" size="327" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.commons.lang3.text.WordUtils" sourceFile="WordUtils.java" interface="false" size="125" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.text.translate" total_bugs="0" total_types="12" total_size="317">
+      <ClassStats class="org.apache.commons.lang3.text.translate.AggregateTranslator" sourceFile="AggregateTranslator.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.CharSequenceTranslator" sourceFile="CharSequenceTranslator.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.CodePointTranslator" sourceFile="CodePointTranslator.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.EntityArrays" sourceFile="EntityArrays.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.JavaUnicodeEscaper" sourceFile="JavaUnicodeEscaper.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.LookupTranslator" sourceFile="LookupTranslator.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.NumericEntityEscaper" sourceFile="NumericEntityEscaper.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.NumericEntityUnescaper" sourceFile="NumericEntityUnescaper.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION" sourceFile="NumericEntityUnescaper.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.OctalUnescaper" sourceFile="OctalUnescaper.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.UnicodeEscaper" sourceFile="UnicodeEscaper.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.text.translate.UnicodeUnescaper" sourceFile="UnicodeUnescaper.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.time" total_bugs="19" total_types="39" total_size="1790" priority_3="2" priority_2="16" priority_1="1">
+      <ClassStats class="org.apache.commons.lang3.time.DateFormatUtils" sourceFile="DateFormatUtils.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.DateParser" sourceFile="DateParser.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.DatePrinter" sourceFile="DatePrinter.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.DateUtils" sourceFile="DateUtils.java" interface="false" size="377" bugs="4" priority_2="4"/>
+      <ClassStats class="org.apache.commons.lang3.time.DateUtils$DateIterator" sourceFile="DateUtils.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.DurationFormatUtils" sourceFile="DurationFormatUtils.java" interface="false" size="230" bugs="9" priority_3="1" priority_2="8"/>
+      <ClassStats class="org.apache.commons.lang3.time.DurationFormatUtils$Token" sourceFile="DurationFormatUtils.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateFormat" sourceFile="FastDateFormat.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateFormat$1" sourceFile="FastDateFormat.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser" sourceFile="FastDateParser.java" interface="false" size="199" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$1" sourceFile="FastDateParser.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$2" sourceFile="FastDateParser.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$3" sourceFile="FastDateParser.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$4" sourceFile="FastDateParser.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy" sourceFile="FastDateParser.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$NumberStrategy" sourceFile="FastDateParser.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$Strategy" sourceFile="FastDateParser.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$TextStrategy" sourceFile="FastDateParser.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy" sourceFile="FastDateParser.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter" sourceFile="FastDatePrinter.java" interface="false" size="204" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral" sourceFile="FastDatePrinter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$NumberRule" sourceFile="FastDatePrinter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField" sourceFile="FastDatePrinter.java" interface="false" size="29" bugs="1" priority_3="1"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$Rule" sourceFile="FastDatePrinter.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$StringLiteral" sourceFile="FastDatePrinter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TextField" sourceFile="FastDatePrinter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey" sourceFile="FastDatePrinter.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule" sourceFile="FastDatePrinter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule" sourceFile="FastDatePrinter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField" sourceFile="FastDatePrinter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField" sourceFile="FastDatePrinter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField" sourceFile="FastDatePrinter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField" sourceFile="FastDatePrinter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField" sourceFile="FastDatePrinter.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField" sourceFile="FastDatePrinter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField" sourceFile="FastDatePrinter.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FormatCache" sourceFile="FormatCache.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.time.FormatCache$MultipartKey" sourceFile="FormatCache.java" interface="false" size="17" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.lang3.time.StopWatch" sourceFile="StopWatch.java" interface="false" size="85" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.lang3.tuple" total_bugs="0" total_types="6" total_size="148">
+      <ClassStats class="org.apache.commons.lang3.tuple.ImmutablePair" sourceFile="ImmutablePair.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.tuple.ImmutableTriple" sourceFile="ImmutableTriple.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.tuple.MutablePair" sourceFile="MutablePair.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.tuple.MutableTriple" sourceFile="MutableTriple.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.tuple.Pair" sourceFile="Pair.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.lang3.tuple.Triple" sourceFile="Triple.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1699" invocations="1276" avgMicrosecondsPerInvocation="1331" maxMicrosecondsPerInvocation="160394" standardDeviationMircosecondsPerInvocation="5576"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1476" invocations="1279" avgMicrosecondsPerInvocation="1154" maxMicrosecondsPerInvocation="7641" standardDeviationMircosecondsPerInvocation="634"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="1053" invocations="2" avgMicrosecondsPerInvocation="526656" maxMicrosecondsPerInvocation="781411" standardDeviationMircosecondsPerInvocation="254755"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="666" invocations="2508" avgMicrosecondsPerInvocation="265" maxMicrosecondsPerInvocation="30660" standardDeviationMircosecondsPerInvocation="1032"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="618" invocations="2528" avgMicrosecondsPerInvocation="244" maxMicrosecondsPerInvocation="339070" standardDeviationMircosecondsPerInvocation="6752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="582" invocations="2527" avgMicrosecondsPerInvocation="230" maxMicrosecondsPerInvocation="8951" standardDeviationMircosecondsPerInvocation="627"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="525" invocations="2480" avgMicrosecondsPerInvocation="211" maxMicrosecondsPerInvocation="5031" standardDeviationMircosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="520" invocations="2563" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="84753" standardDeviationMircosecondsPerInvocation="1744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="402" invocations="2557" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="13289" standardDeviationMircosecondsPerInvocation="542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="363" invocations="3574" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="6340" standardDeviationMircosecondsPerInvocation="271"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="363" invocations="411" avgMicrosecondsPerInvocation="883" maxMicrosecondsPerInvocation="30970" standardDeviationMircosecondsPerInvocation="2196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="308" invocations="33024" avgMicrosecondsPerInvocation="9" maxMicrosecondsPerInvocation="215905" standardDeviationMircosecondsPerInvocation="1191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="301" invocations="411" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="21544" standardDeviationMircosecondsPerInvocation="1657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="251" invocations="1213" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="13763" standardDeviationMircosecondsPerInvocation="690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="216" invocations="2096" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="3658" standardDeviationMircosecondsPerInvocation="264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="188" invocations="483" avgMicrosecondsPerInvocation="390" maxMicrosecondsPerInvocation="13184" standardDeviationMircosecondsPerInvocation="942"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="128" invocations="411" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="5469" standardDeviationMircosecondsPerInvocation="593"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="124" invocations="411" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="13239" standardDeviationMircosecondsPerInvocation="978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="120" invocations="2527" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="2129" standardDeviationMircosecondsPerInvocation="123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="117" invocations="411" avgMicrosecondsPerInvocation="285" maxMicrosecondsPerInvocation="4465" standardDeviationMircosecondsPerInvocation="521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="85" invocations="170" avgMicrosecondsPerInvocation="503" maxMicrosecondsPerInvocation="32061" standardDeviationMircosecondsPerInvocation="2542"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,86 @@
+@@@ A - classifier: SVC(C=1.0, break_ties=False, cache_size=200, class_weight='balanced', coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='scale', kernel='linear',
+    max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
+    verbose=False)
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F68', 'F71-stefano@apache.org', 'F3-InputStream', 'F71-conor@apache.org', 'F71-peterreilly@apache.org', 'F25', 'F22', 'F3-char', 'F116', 'F71-ehatcher@apache.org', 'F71-rubys@apache.org', 'F71-costin@apache.org', 'F101', 'F71-jskeet@apache.org', 'F71-hibou@apache.org', 'F71-bodewig@apache.org', 'F71-mbenson@apache.org', 'F3-File', 'F3-String', 'F123', 'F3-Object', 'F71-umagesh@apache.org', 'F120', 'F15-public', 'F65', 'F72', 'F3-FileOutputStream', 'F3-Project', 'F105', 'F117', 'F77', 'category', 'F3-Integer', 'F71-jhm@apache.org', 'F71-stevel@apache.org', 'F71-sbailliez@apache.org', 'F3-Long', 'F3-byte[]', 'F3-nestedTask.getTaskName()', 'F115', 'F41', 'F71-donaldp@apache.org', 'F3-FileInputStream', 'F3-null', 'F3-boolean', 'F15-private', 'F3-Class', 'F104', 'F71-jglick@apache.org', 'F71-kevj@apache.org', 'F15-protected', 'F3-PrintStream', 'F71-jkf@apache.org', 'F71-antoine@apache.org', 'F3-int', 'F110', 'F126', 'F3-Project.MSG_DEBUG'}
+     F72   F25        ...         F71-mbenson@apache.org F71-jhm@apache.org
+1  10851  4384        ...                              1                  0
+2  10851  4384        ...                              1                  0
+3  10851  4384        ...                              1                  0
+
+[3 rows x 57 columns]
+;.;
+        F72         ...          F71-jhm@apache.org
+0  0.794814         ...                         0.0
+1  0.794814         ...                         0.0
+2  0.794814         ...                         0.0
+
+[3 rows x 57 columns]
+training_x: (1229, 57)
+training_y: 1229
+testset_x: (69, 57)
+testset_y: 69
+              precision    recall  f1-score   support
+
+           0       1.00      0.94      0.97        69
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.94        69
+   macro avg       0.50      0.47      0.49        69
+weighted avg       1.00      0.94      0.97        69
+
+accuracy: 0.9420289855072463
+0.0
+@@@ tn: 65, fp: 4, fn: 0, tp: 0
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:463: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:464: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:465: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:466: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:467: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+iter: 0, sample_no: 64, actual label: 0, predicted: 1
+iter: 1, sample_no: 43, actual label: 0, predicted: 0
+iter: 2, sample_no: 19, actual label: 0, predicted: 1
+iter: 3, sample_no: 40, actual label: 0, predicted: 0
+iter: 4, sample_no: 52, actual label: 0, predicted: 0
+iter: 5, sample_no: 18, actual label: 0, predicted: 0
+iter: 6, sample_no: 26, actual label: 0, predicted: 0
+iter: 7, sample_no: 68, actual label: 0, predicted: 0
+iter: 8, sample_no: 5, actual label: 0, predicted: 0
+iter: 9, sample_no: 31, actual label: 0, predicted: 0
+iter: 10, sample_no: 23, actual label: 0, predicted: 0
+iter: 11, sample_no: 23, actual label: 0, predicted: 0
+iter: 12, sample_no: 52, actual label: 0, predicted: 0
+iter: 13, sample_no: 4, actual label: 0, predicted: 0
+iter: 14, sample_no: 42, actual label: 0, predicted: 0
+iter: 15, sample_no: 57, actual label: 0, predicted: 0
+iter: 16, sample_no: 24, actual label: 0, predicted: 0
+iter: 17, sample_no: 18, actual label: 0, predicted: 0
+iter: 18, sample_no: 28, actual label: 0, predicted: 0
+iter: 19, sample_no: 20, actual label: 0, predicted: 0
+iter: 20, sample_no: 39, actual label: 0, predicted: 0
+iter: 21, sample_no: 1, actual label: 0, predicted: 0
+iter: 22, sample_no: 34, actual label: 0, predicted: 0
+iter: 23, sample_no: 32, actual label: 0, predicted: 0
+iter: 24, sample_no: 68, actual label: 0, predicted: 0
+Traceback (most recent call last):
+  File "baseline.py", line 217, in <module>
+    seed=42 + i, clf=clf, interesting_path=argv )
+  File "baseline.py", line 128, in main
+    auc = metrics.roc_auc_score(testset_y, prob)
+  File "/Users/author1/anaconda3/lib/python3.6/site-packages/sklearn/metrics/_ranking.py", line 390, in roc_auc_score
+    sample_weight=sample_weight)
+  File "/Users/author1/anaconda3/lib/python3.6/site-packages/sklearn/metrics/_base.py", line 77, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "/Users/author1/anaconda3/lib/python3.6/site-packages/sklearn/metrics/_ranking.py", line 221, in _binary_roc_auc_score
+    raise ValueError("Only one class present in y_true. ROC AUC score "
+ValueError: Only one class present in y_true. ROC AUC score is not defined in that case.

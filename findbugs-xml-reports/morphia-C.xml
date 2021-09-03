@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1627443882748" analysisTimestamp="1627463126048" release="">
+  <Project projectName="">
+    <Jar>C:\Users\65983\Desktop\soar_lab\new-projects\project-repos\morphia-C</Jar>
+  </Project>
+  <BugInstance type="DE_MIGHT_IGNORE" priority="3" rank="19" abbrev="DE" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.DatastoreImpl">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.DatastoreImpl" name="save" signature="(Ljava/lang/Iterable;)Ljava/lang/Iterable;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="831" end="837" startBytecode="0" endBytecode="132" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Method>
+    <Class classname="java.lang.Exception" role="CLASS_EXCEPTION">
+      <SourceLine classname="java.lang.Exception"/>
+    </Class>
+    <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="834" end="834" startBytecode="17" endBytecode="17" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="834" end="834" startBytecode="17" endBytecode="17" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="org.mongodb.morphia.DatastoreImpl">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.DatastoreImpl" name="insert" signature="(Lcom/mongodb/DBCollection;Ljava/lang/Iterable;Lcom/mongodb/WriteConcern;)Ljava/lang/Iterable;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="734" end="765" startBytecode="0" endBytecode="109" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Method>
+    <LocalVariable name="wr" register="6" pc="185" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="753" end="753" startBytecode="186" endBytecode="186" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.DatastoreImpl">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.DatastoreImpl" name="getByKeys" signature="(Ljava/lang/Class;Ljava/lang/Iterable;)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="563" end="592" startBytecode="0" endBytecode="588" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="583" end="583" startBytecode="170" endBytecode="170" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.DatastoreImpl">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.DatastoreImpl" name="getKeysByRefs" signature="(Ljava/util/List;)Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="525" end="553" startBytecode="0" endBytecode="722" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.DatastoreImpl" start="537" end="537" startBytecode="165" endBytecode="165" sourcefile="DatastoreImpl.java" sourcepath="org/mongodb/morphia/DatastoreImpl.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.Key">
+      <SourceLine classname="org.mongodb.morphia.Key" sourcefile="Key.java" sourcepath="org/mongodb/morphia/Key.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.Key" name="&lt;init&gt;" signature="(Ljava/lang/Class;[B)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.Key" start="48" end="51" startBytecode="0" endBytecode="116" sourcefile="Key.java" sourcepath="org/mongodb/morphia/Key.java"/>
+    </Method>
+    <Field classname="org.mongodb.morphia.Key" name="idBytes" signature="[B" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.Key" sourcefile="Key.java" sourcepath="org/mongodb/morphia/Key.java"/>
+    </Field>
+    <LocalVariable name="idBytes" register="2" pc="11" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.mongodb.morphia.Key" start="50" end="50" startBytecode="11" endBytecode="11" sourcefile="Key.java" sourcepath="org/mongodb/morphia/Key.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="3" rank="15" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="org.mongodb.morphia.MapreduceResults$Stats">
+      <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.MapreduceResults$Stats" name="emit" signature="I" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" start="107" end="107" startBytecode="1" endBytecode="1" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="3" rank="15" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="org.mongodb.morphia.MapreduceResults$Stats">
+      <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.MapreduceResults$Stats" name="input" signature="I" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" start="103" end="103" startBytecode="1" endBytecode="1" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="3" rank="15" abbrev="UwF" category="CORRECTNESS">
+    <Class classname="org.mongodb.morphia.MapreduceResults$Stats">
+      <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.MapreduceResults$Stats" name="output" signature="I" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.MapreduceResults$Stats" start="111" end="111" startBytecode="1" endBytecode="1" sourcefile="MapreduceResults.java" sourcepath="org/mongodb/morphia/MapreduceResults.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_TYPES" priority="1" rank="1" abbrev="EC" category="CORRECTNESS">
+    <Class classname="org.mongodb.morphia.MapreduceType">
+      <SourceLine classname="org.mongodb.morphia.MapreduceType" sourcefile="MapreduceType.java" sourcepath="org/mongodb/morphia/MapreduceType.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.MapreduceType" name="fromString" signature="(Ljava/lang/String;)Lorg/mongodb/morphia/MapreduceType;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.MapreduceType" start="11" end="17" startBytecode="0" endBytecode="19" sourcefile="MapreduceType.java" sourcepath="org/mongodb/morphia/MapreduceType.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String"/>
+    </Type>
+    <Type descriptor="Lorg/mongodb/morphia/MapreduceType;" role="TYPE_EXPECTED">
+      <SourceLine classname="org.mongodb.morphia.MapreduceType" start="4" end="17" sourcefile="MapreduceType.java" sourcepath="org/mongodb/morphia/MapreduceType.java"/>
+    </Type>
+    <LocalVariable name="val" register="0" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <LocalVariable name="fo" register="2" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="java.lang.Enum" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Enum"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.MapreduceType" start="13" end="13" startBytecode="18" endBytecode="18" sourcefile="MapreduceType.java" sourcepath="org/mongodb/morphia/MapreduceType.java"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" rank="20" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.config.MorphiaConfiguration">
+      <SourceLine classname="org.mongodb.morphia.config.MorphiaConfiguration" sourcefile="MorphiaConfiguration.java" sourcepath="org/mongodb/morphia/config/MorphiaConfiguration.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.config.MorphiaConfiguration" name="assertBeforeInit" signature="()V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.config.MorphiaConfiguration" start="9" end="12" startBytecode="0" endBytecode="67" sourcefile="MorphiaConfiguration.java" sourcepath="org/mongodb/morphia/config/MorphiaConfiguration.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.converters.ByteConverter">
+      <SourceLine classname="org.mongodb.morphia.converters.ByteConverter" sourcefile="ByteConverter.java" sourcepath="org/mongodb/morphia/converters/ByteConverter.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.converters.ByteConverter" name="convertToWrapperArray" signature="([B)Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.converters.ByteConverter" start="58" end="63" startBytecode="0" endBytecode="132" sourcefile="ByteConverter.java" sourcepath="org/mongodb/morphia/converters/ByteConverter.java"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="&lt;init&gt;" signature="(B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Byte"/>
+    </Method>
+    <Method classname="java.lang.Byte" name="valueOf" signature="(B)Ljava/lang/Byte;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Byte"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.converters.ByteConverter" start="61" end="61" startBytecode="27" endBytecode="27" sourcefile="ByteConverter.java" sourcepath="org/mongodb/morphia/converters/ByteConverter.java"/>
+  </BugInstance>
+  <BugInstance type="UPM_UNCALLED_PRIVATE_METHOD" priority="3" rank="20" abbrev="UPM" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.converters.CharacterConverter">
+      <SourceLine classname="org.mongodb.morphia.converters.CharacterConverter" sourcefile="CharacterConverter.java" sourcepath="org/mongodb/morphia/converters/CharacterConverter.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.converters.CharacterConverter" name="convert" signature="(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.converters.CharacterConverter" start="43" end="47" startBytecode="0" endBytecode="155" sourcefile="CharacterConverter.java" sourcepath="org/mongodb/morphia/converters/CharacterConverter.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.mongodb.morphia.converters.IterableConverter">
+      <SourceLine classname="org.mongodb.morphia.converters.IterableConverter" sourcefile="IterableConverter.java" sourcepath="org/mongodb/morphia/converters/IterableConverter.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.converters.IterableConverter" name="decode" signature="(Ljava/lang/Class;Ljava/lang/Object;Lorg/mongodb/morphia/mapping/MappedField;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.converters.IterableConverter" start="40" end="67" startBytecode="0" endBytecode="100" sourcefile="IterableConverter.java" sourcepath="org/mongodb/morphia/converters/IterableConverter.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Collection;" role="TYPE_FOUND" typeParameters="&lt;?&gt;">
+      <SourceLine classname="java.util.Collection"/>
+    </Type>
+    <Type descriptor="Ljava/util/List;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.List"/>
+    </Type>
+    <LocalVariable name="values" register="5" pc="222" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.converters.IterableConverter" start="65" end="65" startBytecode="224" endBytecode="224" sourcefile="IterableConverter.java" sourcepath="org/mongodb/morphia/converters/IterableConverter.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.logging.jdk.FastestJDKLogger">
+      <SourceLine classname="org.mongodb.morphia.logging.jdk.FastestJDKLogger" sourcefile="FastestJDKLogger.java" sourcepath="org/mongodb/morphia/logging/jdk/FastestJDKLogger.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.logging.jdk.FastestJDKLogger" name="logger" signature="Ljava/util/logging/Logger;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.logging.jdk.FastestJDKLogger" sourcefile="FastestJDKLogger.java" sourcepath="org/mongodb/morphia/logging/jdk/FastestJDKLogger.java"/>
+    </Field>
+    <Type descriptor="Ljava/util/logging/Logger;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.logging.Logger"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.logging.jdk.JDKLogger">
+      <SourceLine classname="org.mongodb.morphia.logging.jdk.JDKLogger" sourcefile="JDKLogger.java" sourcepath="org/mongodb/morphia/logging/jdk/JDKLogger.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.logging.jdk.JDKLogger" name="logger" signature="Ljava/util/logging/Logger;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.logging.jdk.JDKLogger" sourcefile="JDKLogger.java" sourcepath="org/mongodb/morphia/logging/jdk/JDKLogger.java"/>
+    </Field>
+    <Type descriptor="Ljava/util/logging/Logger;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.logging.Logger"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedClass">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedClass" name="callLifecycleMethods" signature="(Ljava/lang/Class;Ljava/lang/Object;Lcom/mongodb/DBObject;Lorg/mongodb/morphia/mapping/Mapper;)Lcom/mongodb/DBObject;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="355" end="408" startBytecode="0" endBytecode="934" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Method" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Method"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="375" end="375" startBytecode="196" endBytecode="196" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedClass">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedClass" name="discover" signature="()V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="151" end="204" startBytecode="0" endBytecode="1135" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="178" end="178" startBytecode="303" endBytecode="303" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+  </BugInstance>
+  <BugInstance type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS" priority="1" rank="14" abbrev="Eq" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.mapping.MappedClass">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedClass" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="333" end="338" startBytecode="0" endBytecode="101" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Class;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Class"/>
+    </Type>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="333" end="333" startBytecode="1" endBytecode="1" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="334" end="334" startBytecode="9" endBytecode="9" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.mapping.MappedClass">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedClass" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="333" end="338" startBytecode="0" endBytecode="101" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="MS_MUTABLE_COLLECTION_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedClass">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.MappedClass" name="interestingAnnotations" signature="Ljava/util/List;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="78" end="78" startBytecode="67" endBytecode="67" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="3" rank="20" abbrev="RCN" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.MappedClass">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedClass" name="update" signature="()V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="138" end="145" startBytecode="0" endBytecode="156" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Method>
+    <LocalVariable name="fields" register="1" pc="36" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.mongodb.morphia.mapping.MappedClass" name="getFieldsAnnotatedWith" signature="(Ljava/lang/Class;)Ljava/util/List;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="256" end="262" startBytecode="0" endBytecode="195" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="142" end="142" startBytecode="37" endBytecode="37" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedField">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedField" name="&lt;init&gt;" signature="(Ljava/lang/reflect/Field;Ljava/lang/Class;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="72" end="77" startBytecode="0" endBytecode="147" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="73" end="73" startBytecode="22" endBytecode="22" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedField">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedField" name="getFieldValue" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="499" end="502" startBytecode="0" endBytecode="108" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="499" end="499" startBytecode="5" endBytecode="5" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+  </BugInstance>
+  <BugInstance type="DP_DO_INSIDE_DO_PRIVILEGED" priority="3" rank="20" abbrev="DP" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedField">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.MappedField" name="setFieldValue" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="511" end="516" startBytecode="0" endBytecode="130" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Method>
+    <Method classname="java.lang.reflect.Field" name="setAccessible" signature="(Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.reflect.Field"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="511" end="511" startBytecode="5" endBytecode="5" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+  </BugInstance>
+  <BugInstance type="MS_MUTABLE_COLLECTION_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="org.mongodb.morphia.mapping.MappedField">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.MappedField" name="interestingAnnotations" signature="Ljava/util/List;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedField" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedField" start="48" end="48" startBytecode="88" endBytecode="88" sourcefile="MappedField.java" sourcepath="org/mongodb/morphia/mapping/MappedField.java"/>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="org.mongodb.morphia.mapping.Mapper">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.Mapper" name="isCompatibleForOperator" signature="(Ljava/lang/Class;Lorg/mongodb/morphia/query/FilterOperator;Ljava/lang/Object;)Z" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="802" end="840" startBytecode="0" endBytecode="546" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="829" end="829" startBytecode="351" endBytecode="351" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+  </BugInstance>
+  <BugInstance type="HE_USE_OF_UNHASHABLE_CLASS" priority="2" rank="3" abbrev="HE" category="CORRECTNESS">
+    <Class classname="org.mongodb.morphia.mapping.Mapper">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.Mapper" name="addMappedClass" signature="(Lorg/mongodb/morphia/mapping/MappedClass;Z)Lorg/mongodb/morphia/mapping/MappedClass;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="167" end="193" startBytecode="0" endBytecode="400" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Method>
+    <Type descriptor="Lorg/mongodb/morphia/mapping/MappedClass;" role="TYPE_UNHASHABLE">
+      <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="51" end="531" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+    </Type>
+    <Method classname="java.util.Set" name="add" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Set"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="191" end="191" startBytecode="159" endBytecode="159" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.Mapper">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.Mapper" name="getId" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="473" end="488" startBytecode="0" endBytecode="152" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="487" end="487" startBytecode="31" endBytecode="31" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.Mapper">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.Mapper" name="updateKeyInfo" signature="(Ljava/lang/Object;Lcom/mongodb/DBObject;Lorg/mongodb/morphia/mapping/cache/EntityCache;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="248" end="278" startBytecode="0" endBytecode="380" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.Mapper" start="270" end="270" startBytecode="158" endBytecode="158" sourcefile="Mapper.java" sourcepath="org/mongodb/morphia/mapping/Mapper.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.MapperOptions">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.MapperOptions" name="actLikeSerializer" signature="Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="182" end="182" startBytecode="357" endBytecode="357" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.MapperOptions">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.MapperOptions" name="ignoreFinals" signature="Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.MappedClass" start="183" end="183" startBytecode="385" endBytecode="385" sourcefile="MappedClass.java" sourcepath="org/mongodb/morphia/mapping/MappedClass.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.MapperOptions">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.MapperOptions" name="storeEmpties" signature="Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.EmbeddedMapper" start="46" end="46" startBytecode="171" endBytecode="171" sourcefile="EmbeddedMapper.java" sourcepath="org/mongodb/morphia/mapping/EmbeddedMapper.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="3" rank="20" abbrev="UwF" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.MapperOptions">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.MapperOptions" name="storeNulls" signature="Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.MapperOptions" sourcefile="MapperOptions.java" sourcepath="org/mongodb/morphia/mapping/MapperOptions.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.converters.DefaultConverters" start="207" end="207" startBytecode="33" endBytecode="33" sourcefile="DefaultConverters.java" sourcepath="org/mongodb/morphia/converters/DefaultConverters.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.ReferenceMapper">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.ReferenceMapper" name="writeMap" signature="(Lorg/mongodb/morphia/mapping/MappedField;Lcom/mongodb/DBObject;Ljava/lang/String;Ljava/lang/Object;Lorg/mongodb/morphia/mapping/Mapper;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper" start="106" end="128" startBytecode="0" endBytecode="90" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Map;" role="TYPE_FOUND" typeParameters="&lt;java.lang.Object,java.lang.Object&gt;">
+      <SourceLine classname="java.util.Map"/>
+    </Type>
+    <Type descriptor="Lorg/mongodb/morphia/mapping/lazy/proxy/ProxiedEntityReferenceMap;" role="TYPE_EXPECTED">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.ProxiedEntityReferenceMap" sourcefile="ProxiedEntityReferenceMap.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/ProxiedEntityReferenceMap.java"/>
+    </Type>
+    <LocalVariable name="fieldValue" register="4" pc="44" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper" start="111" end="111" startBytecode="46" endBytecode="46" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.ReferenceMapper">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.ReferenceMapper" name="readCollection" signature="(Lcom/mongodb/DBObject;Lorg/mongodb/morphia/mapping/MappedField;Ljava/lang/Object;Lorg/mongodb/morphia/annotations/Reference;Lorg/mongodb/morphia/mapping/cache/EntityCache;Lorg/mongodb/morphia/mapping/Mapper;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper" start="198" end="258" startBytecode="0" endBytecode="175" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Collection;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.Collection"/>
+    </Type>
+    <Type descriptor="Lorg/mongodb/morphia/mapping/lazy/proxy/ProxiedEntityReferenceList;" role="TYPE_EXPECTED">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.ProxiedEntityReferenceList" sourcefile="ProxiedEntityReferenceList.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/ProxiedEntityReferenceList.java"/>
+    </Type>
+    <LocalVariable name="references" register="8" pc="102" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper" start="205" end="205" startBytecode="104" endBytecode="104" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.ReferenceMapper$2">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper$2" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.ReferenceMapper$2" name="eval" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper$2" start="326" end="337" startBytecode="0" endBytecode="47" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Method>
+    <Type descriptor="Ljava/util/Map;" role="TYPE_FOUND">
+      <SourceLine classname="java.util.Map"/>
+    </Type>
+    <Type descriptor="Lorg/mongodb/morphia/mapping/lazy/proxy/ProxiedEntityReferenceMap;" role="TYPE_EXPECTED">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.ProxiedEntityReferenceMap" sourcefile="ProxiedEntityReferenceMap.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/ProxiedEntityReferenceMap.java"/>
+    </Type>
+    <Field classname="org.mongodb.morphia.mapping.ReferenceMapper$2" name="val$map" signature="Ljava/util/Map;" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper$2" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.ReferenceMapper$2" start="331" end="331" startBytecode="47" endBytecode="47" sourcefile="ReferenceMapper.java" sourcepath="org/mongodb/morphia/mapping/ReferenceMapper.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.cache.DefaultEntityCache">
+      <SourceLine classname="org.mongodb.morphia.mapping.cache.DefaultEntityCache" sourcefile="DefaultEntityCache.java" sourcepath="org/mongodb/morphia/mapping/cache/DefaultEntityCache.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.cache.DefaultEntityCache" name="getEntity" signature="(Lorg/mongodb/morphia/Key;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.cache.DefaultEntityCache" start="44" end="59" startBytecode="0" endBytecode="219" sourcefile="DefaultEntityCache.java" sourcepath="org/mongodb/morphia/mapping/cache/DefaultEntityCache.java"/>
+    </Method>
+    <Method classname="org.mongodb.morphia.mapping.lazy.proxy.ProxyHelper" name="isFetched" signature="(Ljava/lang/Object;)Z" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.ProxyHelper" start="38" end="44" startBytecode="0" endBytecode="82" sourcefile="ProxyHelper.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/ProxyHelper.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.cache.DefaultEntityCache" start="49" end="49" startBytecode="37" endBytecode="37" sourcefile="DefaultEntityCache.java" sourcepath="org/mongodb/morphia/mapping/cache/DefaultEntityCache.java"/>
+  </BugInstance>
+  <BugInstance type="LI_LAZY_INIT_UPDATE_STATIC" priority="3" rank="11" abbrev="LI" category="MT_CORRECTNESS">
+    <Class classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" sourcefile="LazyFeatureDependencies.java" sourcepath="org/mongodb/morphia/mapping/lazy/LazyFeatureDependencies.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" name="testDependencyFullFilled" signature="()Z" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" start="28" end="37" startBytecode="0" endBytecode="23" sourcefile="LazyFeatureDependencies.java" sourcepath="org/mongodb/morphia/mapping/lazy/LazyFeatureDependencies.java"/>
+    </Method>
+    <Field classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" name="fulFilled" signature="Ljava/lang/Boolean;" isStatic="true" role="FIELD_ON">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" sourcefile="LazyFeatureDependencies.java" sourcepath="org/mongodb/morphia/mapping/lazy/LazyFeatureDependencies.java"/>
+    </Field>
+    <SourceLine classname="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" start="28" end="32" startBytecode="0" endBytecode="37" sourcefile="LazyFeatureDependencies.java" sourcepath="org/mongodb/morphia/mapping/lazy/LazyFeatureDependencies.java"/>
+  </BugInstance>
+  <BugInstance type="IS2_INCONSISTENT_SYNC" priority="3" rank="20" abbrev="IS" category="MT_CORRECTNESS">
+    <Class classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" sourcefile="AbstractReference.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/AbstractReference.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" name="isFetched" signature="Z" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" sourcefile="AbstractReference.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/AbstractReference.java"/>
+    </Field>
+    <Int value="66" role="INT_SYNC_PERCENT"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" start="49" end="49" startBytecode="1" endBytecode="1" sourcefile="AbstractReference.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/AbstractReference.java" role="SOURCE_LINE_UNSYNC_ACCESS"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" start="33" end="33" startBytecode="1" endBytecode="1" sourcefile="AbstractReference.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/AbstractReference.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" start="38" end="38" startBytecode="22" endBytecode="22" sourcefile="AbstractReference.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/AbstractReference.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" start="62" end="62" startBytecode="6" endBytecode="6" sourcefile="AbstractReference.java" sourcepath="org/mongodb/morphia/mapping/lazy/proxy/AbstractReference.java" role="SOURCE_LINE_SYNC_ACCESS"/>
+    <Property name="edu.umd.cs.findbugs.detect.InconsistentSyncWarningProperty.ONLY_UNSYNC_IN_GETTERS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.mapping.validation.MappingValidator$1">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$1" start="45" end="48" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" name="compareTo" signature="(Lorg/mongodb/morphia/mapping/validation/MappingValidator$LogLine;)I" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" start="142" end="142" startBytecode="0" endBytecode="69" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" name="log" signature="(Lorg/mongodb/morphia/logging/Logr;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" start="124" end="139" startBytecode="0" endBytecode="233" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" start="126" end="128" startBytecode="52" endBytecode="57" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" start="128" end="130" startBytecode="65" endBytecode="70" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" start="116" end="142" sourcefile="MappingValidator.java" sourcepath="org/mongodb/morphia/mapping/validation/MappingValidator.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="org.mongodb.morphia.mapping.validation.classrules.EntityAndEmbed">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.classrules.EntityAndEmbed" sourcefile="EntityAndEmbed.java" sourcepath="org/mongodb/morphia/mapping/validation/classrules/EntityAndEmbed.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.mapping.validation.classrules.EntityAndEmbed" name="check" signature="(Lorg/mongodb/morphia/mapping/MappedClass;Ljava/util/Set;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.classrules.EntityAndEmbed" start="21" end="26" startBytecode="0" endBytecode="161" sourcefile="EntityAndEmbed.java" sourcepath="org/mongodb/morphia/mapping/validation/classrules/EntityAndEmbed.java"/>
+    </Method>
+    <Method classname="org.mongodb.morphia.mapping.validation.ConstraintViolation" name="&lt;init&gt;" signature="(Lorg/mongodb/morphia/mapping/validation/ConstraintViolation$Level;Lorg/mongodb/morphia/mapping/MappedClass;Ljava/lang/Class;Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.ConstraintViolation" start="32" end="37" startBytecode="0" endBytecode="145" sourcefile="ConstraintViolation.java" sourcepath="org/mongodb/morphia/mapping/validation/ConstraintViolation.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.mapping.validation.classrules.EntityAndEmbed" start="22" end="22" startBytecode="69" endBytecode="69" sourcefile="EntityAndEmbed.java" sourcepath="org/mongodb/morphia/mapping/validation/classrules/EntityAndEmbed.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.mapping.validation.fieldrules.FieldConstraint">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.fieldrules.FieldConstraint" sourcefile="FieldConstraint.java" sourcepath="org/mongodb/morphia/mapping/validation/fieldrules/FieldConstraint.java"/>
+    </Class>
+    <Field classname="org.mongodb.morphia.mapping.validation.fieldrules.FieldConstraint" name="mapper" signature="Lorg/mongodb/morphia/mapping/Mapper;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.mapping.validation.fieldrules.FieldConstraint" sourcefile="FieldConstraint.java" sourcepath="org/mongodb/morphia/mapping/validation/fieldrules/FieldConstraint.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DB_DUPLICATE_SWITCH_CLAUSES" priority="3" rank="20" abbrev="DB" category="STYLE">
+    <Class classname="org.mongodb.morphia.query.GeoFieldCriteria">
+      <SourceLine classname="org.mongodb.morphia.query.GeoFieldCriteria" sourcefile="GeoFieldCriteria.java" sourcepath="org/mongodb/morphia/query/GeoFieldCriteria.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.query.GeoFieldCriteria" name="addTo" signature="(Lcom/mongodb/DBObject;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.query.GeoFieldCriteria" start="23" end="51" startBytecode="0" endBytecode="498" sourcefile="GeoFieldCriteria.java" sourcepath="org/mongodb/morphia/query/GeoFieldCriteria.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.query.GeoFieldCriteria" start="31" end="32" startBytecode="78" endBytecode="107" sourcefile="GeoFieldCriteria.java" sourcepath="org/mongodb/morphia/query/GeoFieldCriteria.java"/>
+    <SourceLine classname="org.mongodb.morphia.query.GeoFieldCriteria" start="34" end="35" startBytecode="108" endBytecode="137" sourcefile="GeoFieldCriteria.java" sourcepath="org/mongodb/morphia/query/GeoFieldCriteria.java"/>
+    <SourceLine classname="org.mongodb.morphia.query.GeoFieldCriteria" start="37" end="38" startBytecode="138" endBytecode="167" sourcefile="GeoFieldCriteria.java" sourcepath="org/mongodb/morphia/query/GeoFieldCriteria.java"/>
+  </BugInstance>
+  <BugInstance type="CN_IDIOM_NO_SUPER_CALL" priority="2" rank="16" abbrev="CN" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.query.QueryImpl">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.query.QueryImpl" name="clone" signature="()Lorg/mongodb/morphia/query/QueryImpl;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="96" end="118" startBytecode="0" endBytecode="405" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" rank="20" abbrev="Dm" category="I18N">
+    <Class classname="org.mongodb.morphia.query.QueryImpl">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.query.QueryImpl" name="translate" signature="(Ljava/lang/String;)Lorg/mongodb/morphia/query/FilterOperator;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="329" end="364" startBytecode="0" endBytecode="472" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="344" end="344" startBytecode="102" endBytecode="102" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="2" rank="8" abbrev="NP" category="CORRECTNESS">
+    <Class classname="org.mongodb.morphia.query.QueryImpl">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.query.QueryImpl" name="order" signature="(Ljava/lang/String;)Lorg/mongodb/morphia/query/Query;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="447" end="457" startBytecode="0" endBytecode="150" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Method>
+    <Method classname="org.mongodb.morphia.query.QueryImpl" name="parseFieldsString" signature="(Ljava/lang/String;Ljava/lang/Class;Lorg/mongodb/morphia/mapping/Mapper;Z)Lcom/mongodb/BasicDBObject;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="465" end="483" startBytecode="0" endBytecode="346" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Method>
+    <Int value="1" role="INT_MAYBE_NULL_ARG"/>
+    <LocalVariable name="condition" register="1" pc="50" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="455" end="455" startBytecode="53" endBytecode="53" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="452" end="452" startBytecode="18" endBytecode="18" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.query.QueryImpl">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.query.QueryImpl" name="asList" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="288" end="300" startBytecode="0" endBytecode="315" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <String value="asList: %s 	 %d entities, iterator time: driver %d ms, mapper %d ms \n	 cache: %s \n	 for %s" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="org.mongodb.morphia.query.QueryImpl" start="296" end="296" startBytecode="144" endBytecode="144" sourcefile="QueryImpl.java" sourcepath="org/mongodb/morphia/query/QueryImpl.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="3" rank="19" abbrev="NP" category="STYLE">
+    <Class classname="org.mongodb.morphia.query.UpdateOpsImpl">
+      <SourceLine classname="org.mongodb.morphia.query.UpdateOpsImpl" sourcefile="UpdateOpsImpl.java" sourcepath="org/mongodb/morphia/query/UpdateOpsImpl.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.query.UpdateOpsImpl" name="add" signature="(Lorg/mongodb/morphia/query/UpdateOperator;Ljava/lang/String;Ljava/lang/Object;Z)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.query.UpdateOpsImpl" start="169" end="204" startBytecode="0" endBytecode="101" sourcefile="UpdateOpsImpl.java" sourcepath="org/mongodb/morphia/query/UpdateOpsImpl.java"/>
+    </Method>
+    <LocalVariable name="val" register="5" pc="54" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.query.UpdateOpsImpl" start="177" end="177" startBytecode="57" endBytecode="57" sourcefile="UpdateOpsImpl.java" sourcepath="org/mongodb/morphia/query/UpdateOpsImpl.java"/>
+  </BugInstance>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" rank="20" abbrev="BC" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.Helper">
+      <SourceLine classname="org.mongodb.morphia.utils.Helper" sourcefile="Helper.java" sourcepath="org/mongodb/morphia/utils/Helper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.Helper" name="getCursor" signature="(Ljava/lang/Iterable;)Lcom/mongodb/DBCursor;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.Helper" start="44" end="44" startBytecode="0" endBytecode="3" sourcefile="Helper.java" sourcepath="org/mongodb/morphia/utils/Helper.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Iterable;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Iterable"/>
+    </Type>
+    <Type descriptor="Lorg/mongodb/morphia/query/MorphiaIterator;" role="TYPE_EXPECTED">
+      <SourceLine classname="org.mongodb.morphia.query.MorphiaIterator" start="26" end="102" sourcefile="MorphiaIterator.java" sourcepath="org/mongodb/morphia/query/MorphiaIterator.java"/>
+    </Type>
+    <LocalVariable name="it" register="0" pc="0" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.utils.Helper" start="44" end="44" startBytecode="1" endBytecode="1" sourcefile="Helper.java" sourcepath="org/mongodb/morphia/utils/Helper.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="org.mongodb.morphia.utils.IterHelper">
+      <SourceLine classname="org.mongodb.morphia.utils.IterHelper" sourcefile="IterHelper.java" sourcepath="org/mongodb/morphia/utils/IterHelper.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.IterHelper" name="loopMap" signature="(Ljava/lang/Object;Lorg/mongodb/morphia/utils/IterHelper$MapIterCallback;)V" isStatic="false">
+      <SourceLine classname="org.mongodb.morphia.utils.IterHelper" start="23" end="56" startBytecode="0" endBytecode="528" sourcefile="IterHelper.java" sourcepath="org/mongodb/morphia/utils/IterHelper.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.utils.IterHelper" start="45" end="45" startBytecode="150" endBytecode="150" sourcefile="IterHelper.java" sourcepath="org/mongodb/morphia/utils/IterHelper.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE" priority="2" rank="13" abbrev="NP" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getFromDirectory" signature="(Ljava/io/File;Ljava/lang/String;)Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="438" end="448" startBytecode="0" endBytecode="284" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <LocalVariable name="arr$" register="3" pc="20" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="440" end="440" startBytecode="21" endBytecode="21" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="440" end="440" startBytecode="16" endBytecode="16" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="NS_DANGEROUS_NON_SHORT_CIRCUIT" priority="1" rank="15" abbrev="NS" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getClasses" signature="(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="477" end="508" startBytecode="0" endBytecode="426" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="494" end="494" startBytecode="132" endBytecode="132" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getFromJARFile" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="452" end="467" startBytecode="0" endBytecode="42" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream"/>
+    </Type>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="453" end="453" startBytecode="8" endBytecode="8" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="3" rank="20" abbrev="RCN" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getAnnotation" signature="(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="373" end="377" startBytecode="0" endBytecode="130" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <LocalVariable name="found" register="2" pc="6" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getAnnotations" signature="(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;" isStatic="true" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="385" end="418" startBytecode="0" endBytecode="429" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="374" end="374" startBytecode="7" endBytecode="7" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="3" rank="20" abbrev="RCN" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getClasses" signature="(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="477" end="508" startBytecode="0" endBytecode="426" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <LocalVariable name="filePath" register="5" pc="96" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="493" end="493" startBytecode="98" endBytecode="98" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="3" rank="20" abbrev="RCN" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getClasses" signature="(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="477" end="508" startBytecode="0" endBytecode="426" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <LocalVariable name="resources" register="4" pc="24" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="java.lang.ClassLoader" name="getResources" signature="(Ljava/lang/String;)Ljava/util/Enumeration;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="java.lang.ClassLoader"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="480" end="480" startBytecode="26" endBytecode="26" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RV_CHECK_FOR_POSITIVE_INDEXOF" priority="3" rank="20" abbrev="RV" category="STYLE">
+    <Class classname="org.mongodb.morphia.utils.ReflectionUtils">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Class>
+    <Method classname="org.mongodb.morphia.utils.ReflectionUtils" name="getClasses" signature="(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="477" end="508" startBytecode="0" endBytecode="426" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    </Method>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="485" end="485" startBytecode="61" endBytecode="61" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java"/>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="489" end="489" startBytecode="82" endBytecode="82" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="org.mongodb.morphia.utils.ReflectionUtils" start="494" end="494" startBytecode="108" endBytecode="108" sourcefile="ReflectionUtils.java" sourcepath="org/mongodb/morphia/utils/ReflectionUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS">
+    <Class classname="relocated.morphia.org.apache.commons.collections.ReferenceMap">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Class>
+    <Method classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" name="put" signature="(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" start="475" end="503" startBytecode="0" endBytecode="401" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Method>
+    <Field classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" name="modCount" signature="I" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Field>
+    <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" start="499" end="499" startBytecode="140" endBytecode="140" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+  </BugInstance>
+  <BugInstance type="VO_VOLATILE_INCREMENT" priority="2" rank="14" abbrev="VO" category="MT_CORRECTNESS">
+    <Class classname="relocated.morphia.org.apache.commons.collections.ReferenceMap">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Class>
+    <Method classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" name="remove" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" start="515" end="537" startBytecode="0" endBytecode="288" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Method>
+    <Field classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" name="modCount" signature="I" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Field>
+    <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap" start="531" end="531" startBytecode="104" endBytecode="104" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$EntryIterator">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$EntryIterator" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Class>
+    <Field classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$EntryIterator" name="currentValue" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$EntryIterator" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Field>
+    <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$EntryIterator" start="826" end="826" startBytecode="66" endBytecode="66" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+  </BugInstance>
+  <BugInstance type="HE_HASHCODE_USE_OBJECT_EQUALS" priority="3" rank="19" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$SoftRef">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$SoftRef" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Class>
+    <Method classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$SoftRef" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$SoftRef" start="917" end="917" startBytecode="0" endBytecode="46" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_HASHCODE_USE_OBJECT_EQUALS" priority="3" rank="19" abbrev="HE" category="BAD_PRACTICE">
+    <Class classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$WeakRef">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$WeakRef" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Class>
+    <Method classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$WeakRef" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="relocated.morphia.org.apache.commons.collections.ReferenceMap$WeakRef" start="933" end="933" startBytecode="0" endBytecode="46" sourcefile="ReferenceMap.java" sourcepath="relocated/morphia/org/apache/commons/collections/ReferenceMap.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="52">
+    <MissingClass>com.google.common.base.Predicates</MissingClass>
+    <MissingClass>com.google.gwt.user.client.rpc.SerializationStreamReader</MissingClass>
+    <MissingClass>com.google.gwt.user.client.rpc.SerializationStreamWriter</MissingClass>
+    <MissingClass>com.google.inject.Injector</MissingClass>
+    <MissingClass>com.mongodb.BasicDBList</MissingClass>
+    <MissingClass>com.mongodb.BasicDBObject</MissingClass>
+    <MissingClass>com.mongodb.BasicDBObjectBuilder</MissingClass>
+    <MissingClass>com.mongodb.CommandResult</MissingClass>
+    <MissingClass>com.mongodb.DB</MissingClass>
+    <MissingClass>com.mongodb.DBCollection</MissingClass>
+    <MissingClass>com.mongodb.DBCursor</MissingClass>
+    <MissingClass>com.mongodb.DBObject</MissingClass>
+    <MissingClass>com.mongodb.DBRef</MissingClass>
+    <MissingClass>com.mongodb.DefaultDBDecoder</MissingClass>
+    <MissingClass>com.mongodb.MapReduceCommand</MissingClass>
+    <MissingClass>com.mongodb.MapReduceCommand$OutputType</MissingClass>
+    <MissingClass>com.mongodb.MapReduceOutput</MissingClass>
+    <MissingClass>com.mongodb.Mongo</MissingClass>
+    <MissingClass>com.mongodb.MongoClient</MissingClass>
+    <MissingClass>com.mongodb.MongoClientOptions</MissingClass>
+    <MissingClass>com.mongodb.MongoClientOptions$Builder</MissingClass>
+    <MissingClass>com.mongodb.MongoException</MissingClass>
+    <MissingClass>com.mongodb.ReadPreference</MissingClass>
+    <MissingClass>com.mongodb.WriteConcern</MissingClass>
+    <MissingClass>com.mongodb.WriteResult</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.factory.CglibProxyFactory</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.kit.ObjectReference</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.toys.delegate.DelegationMode</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.toys.dispatch.Dispatching</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.toys.dispatch.Dispatching$DispatchingBuild</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.toys.dispatch.Dispatching$DispatchingWith</MissingClass>
+    <MissingClass>com.thoughtworks.proxy.toys.hotswap.HotSwappingInvoker</MissingClass>
+    <MissingClass>javax.validation.Configuration</MissingClass>
+    <MissingClass>javax.validation.ConstraintViolation</MissingClass>
+    <MissingClass>javax.validation.ConstraintViolationException</MissingClass>
+    <MissingClass>javax.validation.Validation</MissingClass>
+    <MissingClass>javax.validation.Validator</MissingClass>
+    <MissingClass>javax.validation.ValidatorFactory</MissingClass>
+    <MissingClass>javax.validation.bootstrap.GenericBootstrap</MissingClass>
+    <MissingClass>org.bson.BSONEncoder</MissingClass>
+    <MissingClass>org.bson.BSONObject</MissingClass>
+    <MissingClass>org.bson.BasicBSONEncoder</MissingClass>
+    <MissingClass>org.bson.types.Binary</MissingClass>
+    <MissingClass>org.bson.types.ObjectId</MissingClass>
+    <MissingClass>org.reflections.Reflections</MissingClass>
+    <MissingClass>org.reflections.scanners.TypeAnnotationsScanner</MissingClass>
+    <MissingClass>org.reflections.scanners.TypesScanner</MissingClass>
+    <MissingClass>org.reflections.util.ClasspathHelper</MissingClass>
+    <MissingClass>org.reflections.util.ConfigurationBuilder</MissingClass>
+    <MissingClass>org.scannotation.ClasspathUrlFinder</MissingClass>
+    <MissingClass>org.slf4j.Logger</MissingClass>
+    <MissingClass>org.slf4j.LoggerFactory</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Wed, 28 Jul 2021 11:44:42 +0800" total_classes="209" referenced_classes="369" total_bugs="65" total_size="6913" num_packages="21" java_version="1.8.0_202" vm_version="25.202-b08" cpu_seconds="4.92" clock_seconds="13.10" peak_mbytes="1517.42" alloc_mbytes="1772.50" gc_seconds="0.07" priority_3="37" priority_2="24" priority_1="4">
+    <PackageStats package="org.bson.types" total_bugs="0" total_types="1" total_size="12">
+      <ClassStats class="org.bson.types.ObjectId_CustomFieldSerializer" sourceFile="ObjectId_CustomFieldSerializer.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia" total_bugs="9" total_types="20" total_size="1207" priority_3="5" priority_2="3" priority_1="1">
+      <ClassStats class="org.mongodb.morphia.AbstractEntityInterceptor" sourceFile="AbstractEntityInterceptor.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.AdvancedDatastore" sourceFile="AdvancedDatastore.java" interface="true" size="28" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.AuthenticationException" sourceFile="AuthenticationException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.DAO" sourceFile="DAO.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.Datastore" sourceFile="Datastore.java" interface="true" size="63" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.DatastoreImpl" sourceFile="DatastoreImpl.java" interface="false" size="732" bugs="4" priority_3="2" priority_2="2"/>
+      <ClassStats class="org.mongodb.morphia.DatastoreImpl$1" sourceFile="DatastoreImpl.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.DatastoreService" sourceFile="DatastoreService.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.EntityInterceptor" sourceFile="EntityInterceptor.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.Key" sourceFile="Key.java" interface="false" size="90" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.Key_CustomFieldSerializer" sourceFile="Key_CustomFieldSerializer.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.MapreduceResults" sourceFile="MapreduceResults.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.MapreduceResults$Stats" sourceFile="MapreduceResults.java" interface="false" size="12" bugs="3" priority_3="3"/>
+      <ClassStats class="org.mongodb.morphia.MapreduceType" sourceFile="MapreduceType.java" interface="false" size="21" bugs="1" priority_1="1"/>
+      <ClassStats class="org.mongodb.morphia.Morphia" sourceFile="Morphia.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.MorphiaValidation" sourceFile="MorphiaValidation.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.ObjectFactory" sourceFile="ObjectFactory.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.ValidationExtension" sourceFile="ValidationExtension.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.VerboseJSR303ConstraintViolationException" sourceFile="VerboseJSR303ConstraintViolationException.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.VersionHelper" sourceFile="VersionHelper.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.annotations" total_bugs="0" total_types="23" total_size="61">
+      <ClassStats class="org.mongodb.morphia.annotations.AlsoLoad" sourceFile="AlsoLoad.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.CappedAt" sourceFile="CappedAt.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.ConstructorArgs" sourceFile="ConstructorArgs.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Converters" sourceFile="Converters.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Embedded" sourceFile="Embedded.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Entity" sourceFile="Entity.java" interface="true" size="6" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.EntityListeners" sourceFile="EntityListeners.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Id" sourceFile="Id.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Index" sourceFile="Index.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Indexed" sourceFile="Indexed.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Indexes" sourceFile="Indexes.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.NotSaved" sourceFile="NotSaved.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Polymorphic" sourceFile="Polymorphic.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.PostLoad" sourceFile="PostLoad.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.PostPersist" sourceFile="PostPersist.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.PreLoad" sourceFile="PreLoad.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.PrePersist" sourceFile="PrePersist.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.PreSave" sourceFile="PreSave.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Property" sourceFile="Property.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Reference" sourceFile="Reference.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Serialized" sourceFile="Serialized.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Transient" sourceFile="Transient.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.annotations.Version" sourceFile="Version.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.config" total_bugs="1" total_types="1" total_size="11" priority_3="1">
+      <ClassStats class="org.mongodb.morphia.config.MorphiaConfiguration" sourceFile="MorphiaConfiguration.java" interface="false" size="11" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.converters" total_bugs="4" total_types="30" total_size="685" priority_3="3" priority_2="1">
+      <ClassStats class="org.mongodb.morphia.converters.BooleanConverter" sourceFile="BooleanConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.ByteConverter" sourceFile="ByteConverter.java" interface="false" size="30" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.converters.CharArrayConverter" sourceFile="CharArrayConverter.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.CharacterConverter" sourceFile="CharacterConverter.java" interface="false" size="26" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.converters.ClassConverter" sourceFile="ClassConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.ConverterException" sourceFile="ConverterException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.ConverterNotFoundException" sourceFile="ConverterNotFoundException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.DateConverter" sourceFile="DateConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.DefaultConverters" sourceFile="DefaultConverters.java" interface="false" size="163" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.converters.DoubleConverter" sourceFile="DoubleConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.EnumConverter" sourceFile="EnumConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.EnumSetConverter" sourceFile="EnumSetConverter.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.FloatConverter" sourceFile="FloatConverter.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.IntegerConverter" sourceFile="IntegerConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.IterableConverter" sourceFile="IterableConverter.java" interface="false" size="52" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.converters.KeyConverter" sourceFile="KeyConverter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.LocaleConverter" sourceFile="LocaleConverter.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.LongConverter" sourceFile="LongConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.MapOfValuesConverter" sourceFile="MapOfValuesConverter.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.MapOfValuesConverter$1" sourceFile="MapOfValuesConverter.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.ObjectIdConverter" sourceFile="ObjectIdConverter.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.PassthroughConverter" sourceFile="PassthroughConverter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.SerializedObjectConverter" sourceFile="SerializedObjectConverter.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.ShortConverter" sourceFile="ShortConverter.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.SimpleValueConverter" sourceFile="SimpleValueConverter.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.StringConverter" sourceFile="StringConverter.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.TimestampConverter" sourceFile="TimestampConverter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.TypeConverter" sourceFile="TypeConverter.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.URIConverter" sourceFile="URIConverter.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.converters.UUIDConverter" sourceFile="UUIDConverter.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.dao" total_bugs="0" total_types="2" total_size="119">
+      <ClassStats class="org.mongodb.morphia.dao.BasicDAO" sourceFile="BasicDAO.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.dao.DAO" sourceFile="DAO.java" interface="true" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.ext.entityscanner" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="org.mongodb.morphia.ext.entityscanner.EntityScanner" sourceFile="EntityScanner.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.ext.guice" total_bugs="0" total_types="2" total_size="62">
+      <ClassStats class="org.mongodb.morphia.ext.guice.GuiceExtension" sourceFile="GuiceExtension.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.ext.guice.GuiceObjectFactory" sourceFile="GuiceObjectFactory.java" interface="false" size="55" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.logging" total_bugs="0" total_types="4" total_size="102">
+      <ClassStats class="org.mongodb.morphia.logging.Logr" sourceFile="Logr.java" interface="true" size="21" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.logging.LogrFactory" sourceFile="LogrFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.logging.MorphiaLoggerFactory" sourceFile="MorphiaLoggerFactory.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.logging.SilentLogger" sourceFile="SilentLogger.java" interface="false" size="44" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.logging.jdk" total_bugs="2" total_types="5" total_size="218" priority_2="2">
+      <ClassStats class="org.mongodb.morphia.logging.jdk.FasterJDKLogger" sourceFile="FasterJDKLogger.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.logging.jdk.FastestJDKLogger" sourceFile="FastestJDKLogger.java" interface="false" size="72" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.logging.jdk.JDKLogger" sourceFile="JDKLogger.java" interface="false" size="92" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.logging.jdk.JDKLoggerFactory" sourceFile="JDKLoggerFactory.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.logging.jdk.ShortFormatter" sourceFile="ShortFormatter.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.logging.slf4j" total_bugs="0" total_types="2" total_size="67">
+      <ClassStats class="org.mongodb.morphia.logging.slf4j.SLF4JLogr" sourceFile="SLF4JLogr.java" interface="false" size="62" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.logging.slf4j.SLF4JLogrImplFactory" sourceFile="SLF4JLogrImplFactory.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping" total_bugs="20" total_types="16" total_size="1478" priority_3="15" priority_2="3" priority_1="2">
+      <ClassStats class="org.mongodb.morphia.mapping.CustomMapper" sourceFile="CustomMapper.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.DefaultCreator" sourceFile="DefaultCreator.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.EmbeddedMapper" sourceFile="EmbeddedMapper.java" interface="false" size="126" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.EmbeddedMapper$1" sourceFile="EmbeddedMapper.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.MapOrCollectionMF" sourceFile="MapOrCollectionMF.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.MappedClass" sourceFile="MappedClass.java" interface="false" size="240" bugs="8" priority_3="5" priority_2="1" priority_1="2"/>
+      <ClassStats class="org.mongodb.morphia.mapping.MappedClass$ClassMethodPair" sourceFile="MappedClass.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.MappedField" sourceFile="MappedField.java" interface="false" size="267" bugs="4" priority_3="3" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.Mapper" sourceFile="Mapper.java" interface="false" size="410" bugs="4" priority_3="3" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.MapperOptions" sourceFile="MapperOptions.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.MappingException" sourceFile="MappingException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.ReferenceMapper" sourceFile="ReferenceMapper.java" interface="false" size="188" bugs="2" priority_3="2"/>
+      <ClassStats class="org.mongodb.morphia.mapping.ReferenceMapper$1" sourceFile="ReferenceMapper.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.ReferenceMapper$2" sourceFile="ReferenceMapper.java" interface="false" size="19" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.Serializer" sourceFile="Serializer.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.ValueMapper" sourceFile="ValueMapper.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping.cache" total_bugs="1" total_types="3" total_size="87" priority_2="1">
+      <ClassStats class="org.mongodb.morphia.mapping.cache.DefaultEntityCache" sourceFile="DefaultEntityCache.java" interface="false" size="59" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.cache.EntityCache" sourceFile="EntityCache.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.cache.EntityCacheStatistics" sourceFile="EntityCacheStatistics.java" interface="false" size="19" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping.lazy" total_bugs="1" total_types="7" total_size="86" priority_3="1">
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.CGLibLazyProxyFactory" sourceFile="CGLibLazyProxyFactory.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.DatastoreHolder" sourceFile="DatastoreHolder.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.DatastoreProvider" sourceFile="DatastoreProvider.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.DefaultDatastoreProvider" sourceFile="DefaultDatastoreProvider.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.LazyFeatureDependencies" sourceFile="LazyFeatureDependencies.java" interface="false" size="28" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.LazyProxyFactory" sourceFile="LazyProxyFactory.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.NonFinalizingHotSwappingInvoker" sourceFile="NonFinalizingHotSwappingInvoker.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping.lazy.proxy" total_bugs="1" total_types="10" total_size="173" priority_3="1">
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.AbstractReference" sourceFile="AbstractReference.java" interface="false" size="37" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.LazyReferenceFetchingException" sourceFile="LazyReferenceFetchingException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.ProxiedEntityReference" sourceFile="ProxiedEntityReference.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.ProxiedEntityReferenceList" sourceFile="ProxiedEntityReferenceList.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.ProxiedEntityReferenceMap" sourceFile="ProxiedEntityReferenceMap.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.ProxiedReference" sourceFile="ProxiedReference.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.ProxyHelper" sourceFile="ProxyHelper.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.SerializableCollectionObjectReference" sourceFile="SerializableCollectionObjectReference.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.SerializableEntityObjectReference" sourceFile="SerializableEntityObjectReference.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.lazy.proxy.SerializableMapObjectReference" sourceFile="SerializableMapObjectReference.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping.validation" total_bugs="4" total_types="8" total_size="145" priority_3="1" priority_2="3">
+      <ClassStats class="org.mongodb.morphia.mapping.validation.ClassConstraint" sourceFile="ClassConstraint.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.ConstraintViolation" sourceFile="ConstraintViolation.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.ConstraintViolation$Level" sourceFile="ConstraintViolation.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.ConstraintViolationException" sourceFile="ConstraintViolationException.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.MappingValidator" sourceFile="MappingValidator.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.MappingValidator$1" sourceFile="MappingValidator.java" interface="false" size="7" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.MappingValidator$2" sourceFile="MappingValidator.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.MappingValidator$LogLine" sourceFile="MappingValidator.java" interface="false" size="21" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping.validation.classrules" total_bugs="1" total_types="10" total_size="111" priority_2="1">
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.ContainsEmbeddedWithId" sourceFile="ContainsEmbeddedWithId.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.DuplicatedAttributeNames" sourceFile="DuplicatedAttributeNames.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.EmbeddedAndId" sourceFile="EmbeddedAndId.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.EmbeddedAndValue" sourceFile="EmbeddedAndValue.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.EntityAndEmbed" sourceFile="EntityAndEmbed.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.EntityCannotBeMapOrIterable" sourceFile="EntityCannotBeMapOrIterable.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.FieldEnumString" sourceFile="FieldEnumString.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.MultipleId" sourceFile="MultipleId.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.MultipleVersions" sourceFile="MultipleVersions.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.classrules.NoId" sourceFile="NoId.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.mapping.validation.fieldrules" total_bugs="1" total_types="10" total_size="113" priority_2="1">
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.ContradictingFieldAnnotation" sourceFile="ContradictingFieldAnnotation.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.FieldConstraint" sourceFile="FieldConstraint.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.IdDoesNotMix" sourceFile="IdDoesNotMix.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.LazyReferenceMissingDependencies" sourceFile="LazyReferenceMissingDependencies.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.LazyReferenceOnArray" sourceFile="LazyReferenceOnArray.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.MapKeyDifferentFromString" sourceFile="MapKeyDifferentFromString.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.MapNotSerializable" sourceFile="MapNotSerializable.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.MisplacedProperty" sourceFile="MisplacedProperty.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.ReferenceToUnidentifiable" sourceFile="ReferenceToUnidentifiable.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.mapping.validation.fieldrules.VersionMisuse" sourceFile="VersionMisuse.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.query" total_bugs="6" total_types="30" total_size="1186" priority_3="3" priority_2="3">
+      <ClassStats class="org.mongodb.morphia.query.AbstractCriteria" sourceFile="AbstractCriteria.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.AbstractQueryFactory" sourceFile="AbstractQueryFactory.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.Criteria" sourceFile="Criteria.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.CriteriaContainer" sourceFile="CriteriaContainer.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.CriteriaContainerImpl" sourceFile="CriteriaContainerImpl.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.CriteriaJoin" sourceFile="CriteriaJoin.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.DefaultQueryFactory" sourceFile="DefaultQueryFactory.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.FieldCriteria" sourceFile="FieldCriteria.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.FieldEnd" sourceFile="FieldEnd.java" interface="true" size="33" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.FieldEndImpl" sourceFile="FieldEndImpl.java" interface="false" size="149" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.FilterOperator" sourceFile="FilterOperator.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.GeoFieldCriteria" sourceFile="GeoFieldCriteria.java" interface="false" size="25" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.query.GeoFieldCriteria$1" sourceFile="GeoFieldCriteria.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.MorphiaIterator" sourceFile="MorphiaIterator.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.MorphiaKeyIterator" sourceFile="MorphiaKeyIterator.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.Query" sourceFile="Query.java" interface="true" size="35" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.QueryException" sourceFile="QueryException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.QueryFactory" sourceFile="QueryFactory.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.QueryImpl" sourceFile="QueryImpl.java" interface="false" size="354" bugs="4" priority_3="1" priority_2="3"/>
+      <ClassStats class="org.mongodb.morphia.query.QueryResults" sourceFile="QueryResults.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.Shape" sourceFile="Shape.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.Shape$Center" sourceFile="Shape.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.Shape$Point" sourceFile="Shape.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.UpdateException" sourceFile="UpdateException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.UpdateOperations" sourceFile="UpdateOperations.java" interface="true" size="16" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.UpdateOperator" sourceFile="UpdateOperator.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.UpdateOpsImpl" sourceFile="UpdateOpsImpl.java" interface="false" size="107" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.query.UpdateResults" sourceFile="UpdateResults.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.ValidationException" sourceFile="ValidationException.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.query.WhereCriteria" sourceFile="WhereCriteria.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.mongodb.morphia.utils" total_bugs="9" total_types="13" total_size="510" priority_3="5" priority_2="3" priority_1="1">
+      <ClassStats class="org.mongodb.morphia.utils.Assert" sourceFile="Assert.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.Assert$AssertionFailedException" sourceFile="Assert.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.FieldName" sourceFile="FieldName.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.FieldName$FieldNameNotFoundException" sourceFile="FieldName.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.Helper" sourceFile="Helper.java" interface="false" size="22" bugs="1" priority_3="1"/>
+      <ClassStats class="org.mongodb.morphia.utils.IndexDirection" sourceFile="IndexDirection.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.IndexFieldDef" sourceFile="IndexFieldDef.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.IterHelper" sourceFile="IterHelper.java" interface="false" size="55" bugs="1" priority_2="1"/>
+      <ClassStats class="org.mongodb.morphia.utils.IterHelper$IterCallback" sourceFile="IterHelper.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.IterHelper$MapIterCallback" sourceFile="IterHelper.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.LongIdEntity" sourceFile="LongIdEntity.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.LongIdEntity$StoredId" sourceFile="LongIdEntity.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.mongodb.morphia.utils.ReflectionUtils" sourceFile="ReflectionUtils.java" interface="false" size="277" bugs="7" priority_3="4" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="relocated.morphia.org.apache.commons.collections" total_bugs="5" total_types="11" total_size="452" priority_3="2" priority_2="3">
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.DefaultMapEntry" sourceFile="DefaultMapEntry.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap" sourceFile="ReferenceMap.java" interface="false" size="213" bugs="2" priority_2="2"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$1" sourceFile="ReferenceMap.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$2" sourceFile="ReferenceMap.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$3" sourceFile="ReferenceMap.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$Entry" sourceFile="ReferenceMap.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$EntryIterator" sourceFile="ReferenceMap.java" interface="false" size="64" bugs="1" priority_2="1"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$KeyIterator" sourceFile="ReferenceMap.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$SoftRef" sourceFile="ReferenceMap.java" interface="false" size="8" bugs="1" priority_3="1"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$ValueIterator" sourceFile="ReferenceMap.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="relocated.morphia.org.apache.commons.collections.ReferenceMap$WeakRef" sourceFile="ReferenceMap.java" interface="false" size="8" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="726" invocations="2" avgMicrosecondsPerInvocation="363428" maxMicrosecondsPerInvocation="698510" standardDeviationMircosecondsPerInvocation="335082"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="592" invocations="1292" avgMicrosecondsPerInvocation="458" maxMicrosecondsPerInvocation="1788" standardDeviationMircosecondsPerInvocation="180"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="146" invocations="1289" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="2637" standardDeviationMircosecondsPerInvocation="235"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="108" invocations="1176" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="2228" standardDeviationMircosecondsPerInvocation="176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="104" invocations="1214" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="2786" standardDeviationMircosecondsPerInvocation="173"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="96" invocations="1201" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="2674" standardDeviationMircosecondsPerInvocation="187"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="87" invocations="1247" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="3984" standardDeviationMircosecondsPerInvocation="184"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="86" invocations="369" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="25150" standardDeviationMircosecondsPerInvocation="1357"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="84" invocations="1233" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="1683" standardDeviationMircosecondsPerInvocation="134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="66" invocations="1053" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="1137" standardDeviationMircosecondsPerInvocation="112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="61" invocations="209" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="51844" standardDeviationMircosecondsPerInvocation="3575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="57" invocations="1775" avgMicrosecondsPerInvocation="32" maxMicrosecondsPerInvocation="690" standardDeviationMircosecondsPerInvocation="57"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="56" invocations="369" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="3058" standardDeviationMircosecondsPerInvocation="337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="54" invocations="1214" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="717" standardDeviationMircosecondsPerInvocation="61"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="29" invocations="1214" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="444" standardDeviationMircosecondsPerInvocation="44"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="23" invocations="209" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="3714" standardDeviationMircosecondsPerInvocation="380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="21" invocations="209" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="1708" standardDeviationMircosecondsPerInvocation="179"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="20" invocations="28327" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="135" standardDeviationMircosecondsPerInvocation="2"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="20" invocations="1163" avgMicrosecondsPerInvocation="17" maxMicrosecondsPerInvocation="446" standardDeviationMircosecondsPerInvocation="38"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

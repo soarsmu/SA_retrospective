@@ -1,0 +1,651 @@
+@@@ A - classifier: DummyClassifier(constant=1, random_state=None, strategy='constant')
+@@@ B - threshold stop at: 1
+@@@ C - Repeat number: 1
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 320, actual label: 1, predicted: 1
+iter: 1, sample_no: 336, actual label: 1, predicted: 1
+iter: 2, sample_no: 340, actual label: 0, predicted: 1
+iter: 3, sample_no: 258, actual label: 0, predicted: 1
+iter: 4, sample_no: 296, actual label: 0, predicted: 1
+iter: 5, sample_no: 535, actual label: 1, predicted: 1
+iter: 6, sample_no: 438, actual label: 0, predicted: 1
+iter: 7, sample_no: 166, actual label: 0, predicted: 1
+iter: 8, sample_no: 482, actual label: 0, predicted: 1
+iter: 9, sample_no: 250, actual label: 0, predicted: 1
+iter: 10, sample_no: 169, actual label: 0, predicted: 1
+iter: 11, sample_no: 234, actual label: 0, predicted: 1
+iter: 12, sample_no: 37, actual label: 0, predicted: 1
+iter: 13, sample_no: 538, actual label: 0, predicted: 1
+iter: 14, sample_no: 599, actual label: 1, predicted: 1
+iter: 15, sample_no: 548, actual label: 0, predicted: 1
+iter: 16, sample_no: 546, actual label: 0, predicted: 1
+iter: 17, sample_no: 381, actual label: 0, predicted: 1
+iter: 18, sample_no: 618, actual label: 0, predicted: 1
+iter: 19, sample_no: 462, actual label: 0, predicted: 1
+iter: 20, sample_no: 530, actual label: 1, predicted: 1
+iter: 21, sample_no: 418, actual label: 1, predicted: 1
+iter: 22, sample_no: 264, actual label: 0, predicted: 1
+iter: 23, sample_no: 202, actual label: 0, predicted: 1
+iter: 24, sample_no: 439, actual label: 0, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 2
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 419, actual label: 1, predicted: 1
+iter: 1, sample_no: 233, actual label: 0, predicted: 1
+iter: 2, sample_no: 394, actual label: 0, predicted: 1
+iter: 3, sample_no: 180, actual label: 1, predicted: 1
+iter: 4, sample_no: 389, actual label: 1, predicted: 1
+iter: 5, sample_no: 389, actual label: 1, predicted: 1
+iter: 6, sample_no: 429, actual label: 0, predicted: 1
+iter: 7, sample_no: 477, actual label: 0, predicted: 1
+iter: 8, sample_no: 465, actual label: 0, predicted: 1
+iter: 9, sample_no: 331, actual label: 0, predicted: 1
+iter: 10, sample_no: 410, actual label: 1, predicted: 1
+iter: 11, sample_no: 149, actual label: 0, predicted: 1
+iter: 12, sample_no: 588, actual label: 1, predicted: 1
+iter: 13, sample_no: 342, actual label: 0, predicted: 1
+iter: 14, sample_no: 102, actual label: 1, predicted: 1
+iter: 15, sample_no: 57, actual label: 1, predicted: 1
+iter: 16, sample_no: 18, actual label: 0, predicted: 1
+iter: 17, sample_no: 281, actual label: 0, predicted: 1
+iter: 18, sample_no: 453, actual label: 0, predicted: 1
+iter: 19, sample_no: 210, actual label: 1, predicted: 1
+iter: 20, sample_no: 282, actual label: 0, predicted: 1
+iter: 21, sample_no: 599, actual label: 1, predicted: 1
+iter: 22, sample_no: 302, actual label: 0, predicted: 1
+iter: 23, sample_no: 330, actual label: 0, predicted: 1
+iter: 24, sample_no: 320, actual label: 1, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 3
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 414, actual label: 1, predicted: 1
+iter: 1, sample_no: 129, actual label: 0, predicted: 1
+iter: 2, sample_no: 473, actual label: 0, predicted: 1
+iter: 3, sample_no: 197, actual label: 0, predicted: 1
+iter: 4, sample_no: 145, actual label: 0, predicted: 1
+iter: 5, sample_no: 218, actual label: 0, predicted: 1
+iter: 6, sample_no: 536, actual label: 0, predicted: 1
+iter: 7, sample_no: 550, actual label: 1, predicted: 1
+iter: 8, sample_no: 173, actual label: 0, predicted: 1
+iter: 9, sample_no: 604, actual label: 1, predicted: 1
+iter: 10, sample_no: 52, actual label: 1, predicted: 1
+iter: 11, sample_no: 651, actual label: 0, predicted: 1
+iter: 12, sample_no: 510, actual label: 0, predicted: 1
+iter: 13, sample_no: 511, actual label: 0, predicted: 1
+iter: 14, sample_no: 176, actual label: 0, predicted: 1
+iter: 15, sample_no: 171, actual label: 0, predicted: 1
+iter: 16, sample_no: 18, actual label: 0, predicted: 1
+iter: 17, sample_no: 480, actual label: 0, predicted: 1
+iter: 18, sample_no: 109, actual label: 1, predicted: 1
+iter: 19, sample_no: 629, actual label: 0, predicted: 1
+iter: 20, sample_no: 11, actual label: 0, predicted: 1
+iter: 21, sample_no: 299, actual label: 1, predicted: 1
+iter: 22, sample_no: 459, actual label: 1, predicted: 1
+iter: 23, sample_no: 60, actual label: 1, predicted: 1
+iter: 24, sample_no: 614, actual label: 1, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 4
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 189, actual label: 1, predicted: 1
+iter: 1, sample_no: 309, actual label: 0, predicted: 1
+iter: 2, sample_no: 627, actual label: 0, predicted: 1
+iter: 3, sample_no: 435, actual label: 0, predicted: 1
+iter: 4, sample_no: 639, actual label: 1, predicted: 1
+iter: 5, sample_no: 43, actual label: 1, predicted: 1
+iter: 6, sample_no: 45, actual label: 0, predicted: 1
+iter: 7, sample_no: 105, actual label: 0, predicted: 1
+iter: 8, sample_no: 557, actual label: 1, predicted: 1
+iter: 9, sample_no: 367, actual label: 1, predicted: 1
+iter: 10, sample_no: 224, actual label: 0, predicted: 1
+iter: 11, sample_no: 388, actual label: 1, predicted: 1
+iter: 12, sample_no: 219, actual label: 0, predicted: 1
+iter: 13, sample_no: 593, actual label: 1, predicted: 1
+iter: 14, sample_no: 380, actual label: 0, predicted: 1
+iter: 15, sample_no: 355, actual label: 0, predicted: 1
+iter: 16, sample_no: 365, actual label: 0, predicted: 1
+iter: 17, sample_no: 337, actual label: 1, predicted: 1
+iter: 18, sample_no: 208, actual label: 0, predicted: 1
+iter: 19, sample_no: 262, actual label: 0, predicted: 1
+iter: 20, sample_no: 28, actual label: 1, predicted: 1
+iter: 21, sample_no: 121, actual label: 0, predicted: 1
+iter: 22, sample_no: 341, actual label: 0, predicted: 1
+iter: 23, sample_no: 299, actual label: 1, predicted: 1
+iter: 24, sample_no: 103, actual label: 1, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 5
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 135, actual label: 1, predicted: 1
+iter: 1, sample_no: 417, actual label: 1, predicted: 1
+iter: 2, sample_no: 227, actual label: 1, predicted: 1
+iter: 3, sample_no: 118, actual label: 1, predicted: 1
+iter: 4, sample_no: 628, actual label: 0, predicted: 1
+iter: 5, sample_no: 29, actual label: 1, predicted: 1
+iter: 6, sample_no: 410, actual label: 1, predicted: 1
+iter: 7, sample_no: 33, actual label: 1, predicted: 1
+iter: 8, sample_no: 329, actual label: 0, predicted: 1
+iter: 9, sample_no: 118, actual label: 1, predicted: 1
+iter: 10, sample_no: 631, actual label: 0, predicted: 1
+iter: 11, sample_no: 269, actual label: 1, predicted: 1
+iter: 12, sample_no: 273, actual label: 0, predicted: 1
+iter: 13, sample_no: 233, actual label: 0, predicted: 1
+iter: 14, sample_no: 637, actual label: 0, predicted: 1
+iter: 15, sample_no: 621, actual label: 0, predicted: 1
+iter: 16, sample_no: 618, actual label: 0, predicted: 1
+iter: 17, sample_no: 482, actual label: 0, predicted: 1
+iter: 18, sample_no: 406, actual label: 0, predicted: 1
+iter: 19, sample_no: 542, actual label: 0, predicted: 1
+iter: 20, sample_no: 426, actual label: 0, predicted: 1
+iter: 21, sample_no: 390, actual label: 0, predicted: 1
+iter: 22, sample_no: 579, actual label: 0, predicted: 1
+iter: 23, sample_no: 62, actual label: 0, predicted: 1
+iter: 24, sample_no: 285, actual label: 1, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 6
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 512, actual label: 0, predicted: 1
+iter: 1, sample_no: 129, actual label: 0, predicted: 1
+iter: 2, sample_no: 217, actual label: 1, predicted: 1
+iter: 3, sample_no: 92, actual label: 1, predicted: 1
+iter: 4, sample_no: 382, actual label: 0, predicted: 1
+iter: 5, sample_no: 516, actual label: 0, predicted: 1
+iter: 6, sample_no: 60, actual label: 1, predicted: 1
+iter: 7, sample_no: 566, actual label: 0, predicted: 1
+iter: 8, sample_no: 18, actual label: 0, predicted: 1
+iter: 9, sample_no: 266, actual label: 1, predicted: 1
+iter: 10, sample_no: 92, actual label: 1, predicted: 1
+iter: 11, sample_no: 76, actual label: 0, predicted: 1
+iter: 12, sample_no: 245, actual label: 1, predicted: 1
+iter: 13, sample_no: 125, actual label: 1, predicted: 1
+iter: 14, sample_no: 594, actual label: 1, predicted: 1
+iter: 15, sample_no: 411, actual label: 1, predicted: 1
+iter: 16, sample_no: 585, actual label: 0, predicted: 1
+iter: 17, sample_no: 577, actual label: 0, predicted: 1
+iter: 18, sample_no: 547, actual label: 0, predicted: 1
+iter: 19, sample_no: 123, actual label: 0, predicted: 1
+iter: 20, sample_no: 449, actual label: 1, predicted: 1
+iter: 21, sample_no: 11, actual label: 0, predicted: 1
+iter: 22, sample_no: 256, actual label: 0, predicted: 1
+iter: 23, sample_no: 309, actual label: 0, predicted: 1
+iter: 24, sample_no: 19, actual label: 0, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 7
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 426, actual label: 0, predicted: 1
+iter: 1, sample_no: 553, actual label: 1, predicted: 1
+iter: 2, sample_no: 184, actual label: 1, predicted: 1
+iter: 3, sample_no: 416, actual label: 1, predicted: 1
+iter: 4, sample_no: 390, actual label: 0, predicted: 1
+iter: 5, sample_no: 361, actual label: 1, predicted: 1
+iter: 6, sample_no: 556, actual label: 1, predicted: 1
+iter: 7, sample_no: 307, actual label: 0, predicted: 1
+iter: 8, sample_no: 653, actual label: 1, predicted: 1
+iter: 9, sample_no: 208, actual label: 0, predicted: 1
+iter: 10, sample_no: 149, actual label: 0, predicted: 1
+iter: 11, sample_no: 35, actual label: 0, predicted: 1
+iter: 12, sample_no: 437, actual label: 0, predicted: 1
+iter: 13, sample_no: 218, actual label: 0, predicted: 1
+iter: 14, sample_no: 76, actual label: 0, predicted: 1
+iter: 15, sample_no: 101, actual label: 1, predicted: 1
+iter: 16, sample_no: 189, actual label: 1, predicted: 1
+iter: 17, sample_no: 201, actual label: 0, predicted: 1
+iter: 18, sample_no: 425, actual label: 1, predicted: 1
+iter: 19, sample_no: 423, actual label: 1, predicted: 1
+iter: 20, sample_no: 302, actual label: 0, predicted: 1
+iter: 21, sample_no: 624, actual label: 0, predicted: 1
+iter: 22, sample_no: 195, actual label: 0, predicted: 1
+iter: 23, sample_no: 572, actual label: 1, predicted: 1
+iter: 24, sample_no: 126, actual label: 0, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 8
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 480, actual label: 0, predicted: 1
+iter: 1, sample_no: 455, actual label: 0, predicted: 1
+iter: 2, sample_no: 506, actual label: 1, predicted: 1
+iter: 3, sample_no: 239, actual label: 0, predicted: 1
+iter: 4, sample_no: 366, actual label: 0, predicted: 1
+iter: 5, sample_no: 625, actual label: 1, predicted: 1
+iter: 6, sample_no: 414, actual label: 1, predicted: 1
+iter: 7, sample_no: 118, actual label: 1, predicted: 1
+iter: 8, sample_no: 317, actual label: 1, predicted: 1
+iter: 9, sample_no: 37, actual label: 0, predicted: 1
+iter: 10, sample_no: 393, actual label: 0, predicted: 1
+iter: 11, sample_no: 195, actual label: 0, predicted: 1
+iter: 12, sample_no: 450, actual label: 0, predicted: 1
+iter: 13, sample_no: 331, actual label: 0, predicted: 1
+iter: 14, sample_no: 585, actual label: 0, predicted: 1
+iter: 15, sample_no: 293, actual label: 0, predicted: 1
+iter: 16, sample_no: 518, actual label: 1, predicted: 1
+iter: 17, sample_no: 342, actual label: 0, predicted: 1
+iter: 18, sample_no: 583, actual label: 0, predicted: 1
+iter: 19, sample_no: 138, actual label: 1, predicted: 1
+iter: 20, sample_no: 587, actual label: 1, predicted: 1
+iter: 21, sample_no: 176, actual label: 0, predicted: 1
+iter: 22, sample_no: 168, actual label: 0, predicted: 1
+iter: 23, sample_no: 315, actual label: 0, predicted: 1
+iter: 24, sample_no: 584, actual label: 0, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 9
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+iter: 0, sample_no: 57, actual label: 1, predicted: 1
+iter: 1, sample_no: 495, actual label: 1, predicted: 1
+iter: 2, sample_no: 219, actual label: 0, predicted: 1
+iter: 3, sample_no: 375, actual label: 0, predicted: 1
+iter: 4, sample_no: 206, actual label: 0, predicted: 1
+iter: 5, sample_no: 73, actual label: 0, predicted: 1
+iter: 6, sample_no: 550, actual label: 1, predicted: 1
+iter: 7, sample_no: 464, actual label: 1, predicted: 1
+iter: 8, sample_no: 33, actual label: 1, predicted: 1
+iter: 9, sample_no: 98, actual label: 0, predicted: 1
+iter: 10, sample_no: 465, actual label: 0, predicted: 1
+iter: 11, sample_no: 353, actual label: 0, predicted: 1
+iter: 12, sample_no: 459, actual label: 1, predicted: 1
+iter: 13, sample_no: 535, actual label: 1, predicted: 1
+iter: 14, sample_no: 623, actual label: 0, predicted: 1
+iter: 15, sample_no: 15, actual label: 1, predicted: 1
+iter: 16, sample_no: 625, actual label: 1, predicted: 1
+iter: 17, sample_no: 604, actual label: 1, predicted: 1
+iter: 18, sample_no: 276, actual label: 1, predicted: 1
+iter: 19, sample_no: 333, actual label: 0, predicted: 1
+iter: 20, sample_no: 634, actual label: 1, predicted: 1
+iter: 21, sample_no: 381, actual label: 0, predicted: 1
+iter: 22, sample_no: 545, actual label: 0, predicted: 1
+iter: 23, sample_no: 378, actual label: 0, predicted: 1
+iter: 24, sample_no: 445, actual label: 0, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+@@@ C - Repeat number: 10
+@@@ D - common_header:  {'F104', 'F3-String', 'F123', 'F105', 'F15-public', 'F3-null', 'F3-TopicPartition', 'F110', 'F3-NA', 'F65', 'F71-rajinisivaram@googlemail.com', 'F41', 'F120', 'F3-int', 'F71-jjkoshy@gmail.com', 'F3-byte[]', 'F3-boolean', 'F101', 'F71-ismael@juma.me.uk', 'F77', 'F71-granthenke@gmail.com', 'F15-NA', 'F71-junrao@gmail.com', 'F115', 'F71-becket.qin@gmail.com', 'F15-protected', 'F3-long', 'category', 'F71-nehanarkhede@apache.org', 'F71-lindong28@gmail.com', 'F72', 'F71-schintalapani@hortonworks.com', 'F71-neha.narkhede@gmail.com', 'F68', 'F25', 'F22', 'F116', 'F71-wangguoz@gmail.com', 'F71-cshapi@gmail.com', 'F126', 'F71-jason@confluent.io', 'F117'}
+    F72         ...          F71-junrao@gmail.com
+1  7951         ...                             0
+2  6802         ...                             1
+3  6802         ...                             1
+
+[3 rows x 41 columns]
+;.;
+        F72          ...           F71-junrao@gmail.com
+0  0.842294          ...                            0.0
+1  0.327509          ...                            1.0
+2  0.327509          ...                            1.0
+
+[3 rows x 41 columns]
+training_x: (1813, 41)
+training_y: 1813
+testset_x: (654, 41)
+testset_y: 654
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       392
+           1       0.40      1.00      0.57       262
+
+    accuracy                           0.40       654
+   macro avg       0.20      0.50      0.29       654
+weighted avg       0.16      0.40      0.23       654
+
+accuracy: 0.40061162079510704
+0.5720524017467249
+@@@ tn: 0, fp: 392, fn: 0, tp: 262
+@@@ LIME - Creating explainer
+@@@ LIME - Random Sampling of Instances
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:463: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:464: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:465: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:466: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/author1/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:467: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+iter: 0, sample_no: 525, actual label: 1, predicted: 1
+iter: 1, sample_no: 176, actual label: 0, predicted: 1
+iter: 2, sample_no: 282, actual label: 0, predicted: 1
+iter: 3, sample_no: 160, actual label: 1, predicted: 1
+iter: 4, sample_no: 617, actual label: 1, predicted: 1
+iter: 5, sample_no: 358, actual label: 1, predicted: 1
+iter: 6, sample_no: 417, actual label: 1, predicted: 1
+iter: 7, sample_no: 223, actual label: 0, predicted: 1
+iter: 8, sample_no: 310, actual label: 0, predicted: 1
+iter: 9, sample_no: 100, actual label: 1, predicted: 1
+iter: 10, sample_no: 458, actual label: 0, predicted: 1
+iter: 11, sample_no: 222, actual label: 0, predicted: 1
+iter: 12, sample_no: 372, actual label: 0, predicted: 1
+iter: 13, sample_no: 161, actual label: 1, predicted: 1
+iter: 14, sample_no: 536, actual label: 0, predicted: 1
+iter: 15, sample_no: 534, actual label: 0, predicted: 1
+iter: 16, sample_no: 472, actual label: 0, predicted: 1
+iter: 17, sample_no: 11, actual label: 0, predicted: 1
+iter: 18, sample_no: 89, actual label: 0, predicted: 1
+iter: 19, sample_no: 447, actual label: 0, predicted: 1
+iter: 20, sample_no: 505, actual label: 1, predicted: 1
+iter: 21, sample_no: 540, actual label: 0, predicted: 1
+iter: 22, sample_no: 180, actual label: 1, predicted: 1
+iter: 23, sample_no: 44, actual label: 0, predicted: 1
+iter: 24, sample_no: 17, actual label: 0, predicted: 1
+number of samples: 654
+AUC 0.5
+pos_get 262
+total recall stop_at 1
+----------threshold stop at----------: 1
+AUC [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+AUC_median 0.5
+AUC_iqr 0.0
+cost [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+COST_med 1.0
+COST_iqr 0.0
+f1_pos_list [0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249, 0.5720524017467249]
+f1_pos_med 0.5720524017467249
