@@ -5,13 +5,13 @@ This repository contains the replication package of the paper "Detecting False A
 which performs a retrospective and analysis of the studies and approaches to differentiate false alarms from actionable warnings.
 
 This repository contains 
-1) the raw data of the features extracted using Wang et al.'s feature extractor (https://github.com/wangjunjieISCAS/SAWarningIdentification)
-2) the findbugs xml reports for each project
+1) the raw data of the features extracted 
+2) the findbugs XML reports for the revisions of each project
 3) human annotated labels for closed warnings
 4) a script to generate the numbers reported in the paper.
 5) brief description of the golden features
 6) revisions of the projects used in the experiments
-7) script to compare the findbugs filter file with the feature file
+7) a script to compare the findbugs filter file with the feature file
 8) lime reports of the most valuable features
 
 Our work relied heavily on the code and data released with these papers.
@@ -19,6 +19,7 @@ Our work relied heavily on the code and data released with these papers.
 [1] Wang, Junjie, Song Wang, and Qing Wang. "Is there a" golden" feature set for static warning identification? an experimental evaluation." Proceedings of the 12th ACM/IEEE international symposium on empirical software engineering and measurement. 2018.
 
 [2] Yang, Xueqi, et al. "Understanding static code warnings: An incremental AI approach." Expert Systems with Applications 167 (2021): 114134.
+
 [3] Yang, Xueqi, et al. "Learning to recognize actionable static code warnings (is intrinsically easy)." Empirical Software Engineering 26.3 (2021): 1-24.
 
 
@@ -38,35 +39,35 @@ This can be run again to generate the results, but a set of logs have already be
 In the paper, the results and number in various tables can be found in `logs`.
 The numbers reported in the paper can be obtained from the logs.
 The F1, precision, recall, and AUC can be found at the bottom of each log file.
+Substitute `<project>` with the project name, e.g. ant
+`
+For experiments without the leaked features (Table 3, Table 4), check the files: 
+* baseline_without_leaked_features_table3b_\<project\>.log
 
+For experiments with only the leaked features (Table 4), check the files: 
+* only_leaked_table4_\<project\>.log
 
-For experiments without the leaked features, check the files: 
-* baseline_without_leaked_features_table3b_<project>.log
+For the experiments using kNN (Table 4), check the files: 
+* nn\<size:1/3/5/10\>\_table4\_<project>.log
 
-For experiments with only the leaked features, check the files: 
-* only_leaked_table4_<project>.log
-
-For the experiments using kNN, check the files: 
-* nn<size:1/3/5/10>_table4_<project>.log
-
-For the experiments without the duplicated data, check the files: 
-* <baseline/dummy>_table3c_<project>.log (with leaked) and 
+For the experiments without the duplicated data (Table 3, Table 4), check the files: 
+* \<baseline/dummy\>_table3c_<project>.log (with leaked) and 
 * baseline_without_leaked_features_table3d_<project>.log (without leaked).
 
-For the experiments of the effects of the choice of reference revision:
-* baseline_2016_<project>.log
-* baseline_2017_<project>.log
-* baseline_2018_<project>.log
-* dummy_2016_<project>.log
-* dummy_2017_<project>.log
-*dummy_2018_<project>.log
+For the experiments of the effects of the choice of reference revision (Table 5):
+* baseline_2016_\<project\>.log
+* baseline_2017_\<project\>.log
+* baseline_2018_\<project\>.log
+* dummy_2016_\<project\>.log
+* dummy_2017_\<project\>.log
+* dummy_2018_\<project\>.log
 
-For the experiments regarding manually labelled data, check the files:
-* <baseline/dummy>_table7a_<project>.log
+For the experiments regarding manually labelled data (Table 7), check the files:
+* \<baseline/dummy\>_table7a_\<project\>.log
 
-For the experiments using projects with a findbugs filter, check the files:
-* <baseline/dummy>_table7b_<project>.log	 (all data, but no data duplicates)
-* <baseline/dummy>_table7c_<project>.log	 (removed unconfirmed false alarms)
+For the experiments using projects with a findbugs filter (Table 7), check the files:
+* \<baseline/dummy\>_table7b_\<project\>.log	 (all data, but no data duplicates)
+* \<baseline/dummy\>_table7c_\<project\>.log	 (removed unconfirmed false alarms)
 
 The baseline in the file name refers to the Golden Features SVM, and dummy refers to the strawman classifier that always predicts a single label.
 
@@ -75,14 +76,15 @@ The baseline in the file name refers to the Golden Features SVM, and dummy refer
 
 The human annotated data can be found in the `labelled` directory.
 
+The labelling guideline is provided in the `labelled` directory as well.
 
 
 ## Description of features
 
-The Golden Features were analyzed by Wang et al..
+The Golden Features were analyzed by Wang et al.[1].
 Our paper found data leakage in the 5 features that depend on the computation of the proportion of actionable warnings.
-The data leakage occurs because the actionability of each warning in the context (e.g. a file) has to be determined, and this is done by comparing the warnings against the reference revision.
-The test warning is also a warning in the context (e.g. the file), and this means the ground-truth label is used as part of the computation of the "warning context".
+The data leakage occurs because the actionability of each warning in the context (e.g. a file) has to be determined, and this is done by comparing the warnings against the reference revision, set in the future.
+The test warning is also a warning in the context (e.g. the file), and as a consequence, the ground-truth label is used as part of the computation of the "warning context".
 
 
 |  Feature | brief explanation|

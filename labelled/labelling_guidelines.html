@@ -1,0 +1,39 @@
+<h1>Labeling guidelines</h1>
+
+<strong>Input</strong>
+<p>A bug instance/warning from findbugs, including the following information</p>
+<ol>
+	<li>warning id</li>
+<li>project</li>
+<li>bug pattern</li>
+<li>a revision of the project, identified by its git commit, where findbugs produces the warning</li>
+<li>name of the class containing the bug instance</li>
+<li>name of the method containing the bug instance (if applicable)</li>
+<li>name of the field related to the bug instance (if applicable)</li>
+<li>start and end line</li>
+<li>a heuristically-determined label, either "close" or "open" (based on the comparison of the output of findbugs on revision given in (3) and a later revision (indicated in the data as `last commit`))</li>
+<li>Urls to github, where the file can be viewed. The first url links to the version of the file where findbugs produces the given warning. For "close" labels, the 2nd url shows the revision of the file where the findbugs warning is no longer produced by findbugs. For "open" labels, the 2nd url is a copy of the first url.</li>
+</ol>
+<strong>Output:</strong>
+<p>An label indicating if the warning was really closed or open. Label each instance with one of the following:</p>
+<ul>
+<li>close</li>
+<li>open</li>
+<li>unknown</li>
+</ul>
+
+
+
+<strong>Notes:</strong>
+<p> If method/file containing a warning was removed, label the warning as "unknown"</p>
+<p> If the warning was removed, but a large amount of code was changed (e.g. a refactoring of the entire class, a change in functionality), label the warning as "unknown"</p>
+<p> If the method/field containing the warning/bug was renamed, but the warning/bug still appears to be present, label the warning as "unknown"</p>
+<p> If the statements containing the warning/bug was moved to a different method, but the warning/bug still appears to be present in these statements, label the warning as "unknown"</p>
+<p> If the warning was removed, but the code is still similar to the original code, and the warning/bug still appears to be present, label the warning as "open"</p>
+<p> If the warning was removed, but the original code looked to be a false positive, and you believe that the code was changed just to silence the false alarm from findbugs/spotbugs, label the warning "open".</p>
+<p>If the code appears to be automatically generated, label the warning "unknown".</p>
+<p> If necessary, use information from revision history (see https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/tracking-changes-in-a-file) to navigate to and inspect the older version of the code. </p>
+
+
+
+
