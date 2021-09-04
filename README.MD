@@ -12,7 +12,7 @@ This repository contains
 5) brief description of the golden features
 6) revisions of the projects used in the experiments
 7) script to compare the findbugs filter file with the feature file
-
+8) lime reports of the most valuable features
 
 Our work relied heavily on the code and data released with these papers.
 
@@ -172,6 +172,14 @@ For Table 5 (after we reimplement the Golden Features), the following training r
 | morphia | e3d64573c1f92ab17eb2b6790608e7b5d99604ff | a9ae14415b7fe5041fd0267859667f3eccc403d4|
 | undertow | e037faf03f82393d1b2405520b76aaf245acf0cb | ea58de4d5ef2f8c6dc156c5f9df081e6d7354a65|
 | xmlgraphics-fop | 14f86f666166e530b3588fc606fe0346e37f5c20 | 6a719897d6f98ba89aa08e2f97b2b801be066cbf|
+
+## Lime reports
+
+The lime reports can be found in the `lime-reports` directory. Each file shows the importance of the features to the prediction.
+In these reports, the feature ID are based on the dataset and work by Yang et al., 
+the mappings of the these IDs are found https://github.com/XueqiYang/intrinsic_dimension/blob/master/data/feature%20id%20mapping.csv.
+
+The two most important features are F116 and F115, the warning context features `warning context in file` and `warning context in package`.
 
 
 ## Final notes

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divX8WNFWMA9EZMNKH"></div>
+        <div class="lime top_div" id="top_divSLOB94T8MAMG3XF"></div>
         
         <script>
-        var top_div = d3.select('#top_divX8WNFWMA9EZMNKH').classed('lime top_div', true);
+        var top_div = d3.select('#top_divSLOB94T8MAMG3XF').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.0, 1.0]);
+            var pp = new lime.PredictProba(pp_svg, ["0", "1"], [0.7442612665181181, 0.25573873348188203]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["0", "1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["F72 > 0.32", 0.0], ["F25 <= 0.56", 0.0], ["0.05 < F65 <= 0.11", 0.0], ["F68 <= 0.08", 0.0], ["0.19 < F101 <= 0.29", 0.0], ["F104 <= 0.13", 0.0], ["0.83 < F105 <= 1.00", 0.0], ["F3-NA <= 0.00", 0.0], ["F3-String <= 0.00", 0.0], ["F3-int <= 0.00", 0.0]], 1, exp_div);
+                exp.show([["0.00 < F116 <= 0.50", 0.09352359607338406], ["0.57 < F105 <= 1.00", -0.0667183018024067], ["F15-protected <= 0.00", 0.06431112388425815], ["F3-String <= 0.00", -0.035331130937936224], ["F3-int <= 0.00", 0.027437918834930422], ["F41 > 0.09", 0.02546483001163585], ["F25 <= 0.06", 0.02526395114094971], ["F104 <= 0.02", 0.02470036455533568], ["0.00 < F126 <= 0.01", 0.023412181271857194], ["0.00 < F115 <= 0.00", -0.022186358000825128]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["F72", "0.43", 0.0], ["F25", "0.06", 0.0], ["F65", "0.06", 0.0], ["F68", "0.05", 0.0], ["F101", "0.21", 0.0], ["F104", "0.05", 0.0], ["F105", "1.00", 0.0], ["F3-NA", "0.00", 0.0], ["F3-String", "0.00", 0.0], ["F3-int", "0.00", 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["F116", "0.50", 0.09352359607338406], ["F105", "1.00", -0.0667183018024067], ["F15-protected", "0.00", 0.06431112388425815], ["F3-String", "0.00", -0.035331130937936224], ["F3-int", "0.00", 0.027437918834930422], ["F41", "0.19", 0.02546483001163585], ["F25", "0.02", 0.02526395114094971], ["F104", "0.01", 0.02470036455533568], ["F126", "0.01", 0.023412181271857194], ["F115", "0.00", -0.022186358000825128]], 1, raw_div);
         
         </script>
         </body></html>
