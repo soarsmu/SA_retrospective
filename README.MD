@@ -14,6 +14,13 @@ This repository contains
 7) script to compare the findbugs filter file with the feature file
 
 
+Our work relied heavily on the code and data released with these papers.
+
+[1] Wang, Junjie, Song Wang, and Qing Wang. "Is there a" golden" feature set for static warning identification? an experimental evaluation." Proceedings of the 12th ACM/IEEE international symposium on empirical software engineering and measurement. 2018.
+
+[2] Yang, Xueqi, et al. "Understanding static code warnings: An incremental AI approach." Expert Systems with Applications 167 (2021): 114134.
+[3] Yang, Xueqi, et al. "Learning to recognize actionable static code warnings (is intrinsically easy)." Empirical Software Engineering 26.3 (2021): 1-24.
+
 
 ## Data for the tables in the paper
 The raw data of the extracted features are in the `data` directory
@@ -29,7 +36,8 @@ This can be run again to generate the results, but a set of logs have already be
 
 
 In the paper, the results and number in various tables can be found in `logs`.
-The numbers reported in the paper can be obtained from the logs based on the file name.
+The numbers reported in the paper can be obtained from the logs.
+The F1, precision, recall, and AUC can be found at the bottom of each log file.
 
 
 For experiments without the leaked features, check the files: 
@@ -116,6 +124,9 @@ Many of the features above were initially proposed in these papers:
 For specific details, check the Feature extractor code provided by Wang et al: https://github.com/wangjunjieISCAS/SAWarningIdentification
 
 
+Wang et al.'s work: Wang, Junjie, Song Wang, and Qing Wang. "Is there a" golden" feature set for static warning identification? an experimental evaluation." Proceedings of the 12th ACM/IEEE international symposium on empirical software engineering and measurement. 2018.
+
+
 ## Intersection of Findbugs Filters and warnings:
 
 The script `get_FP.py` compares the Findbugs filter file against the warning instances that have been extracted.
@@ -162,6 +173,10 @@ For Table 5 (after we reimplement the Golden Features), the following training r
 | undertow | e037faf03f82393d1b2405520b76aaf245acf0cb | ea58de4d5ef2f8c6dc156c5f9df081e6d7354a65|
 | xmlgraphics-fop | 14f86f666166e530b3588fc606fe0346e37f5c20 | 6a719897d6f98ba89aa08e2f97b2b801be066cbf|
 
+
+## Final notes
+
+We will like to thank Wang et al.[1] and Yang et al.[2,3] for their work, without which, our study would not have been possible.
 
 
 
